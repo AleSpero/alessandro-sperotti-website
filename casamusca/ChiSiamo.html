@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      
+      <title>Casa Della Musica B&amp;B</title>
+      
+       <!-- Link ai CSS -->
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link href="css/StileSito.css" rel="stylesheet">
+       <link href="css/animate.css" rel="stylesheet">
+      <script src="http://maps.googleapis.com/maps/api/js"></script>
+      
+       <!--SCRIPT NECESSARIO PER GOOGLE MAPS-->
+      <script>
+         function initialize() {
+             var centro = new google.maps.LatLng(45.958812, 8.566278);
+             var marker=new google.maps.Marker({
+           position:centro,
+           });
+           var mapProp = {
+             center:centro,
+             zoom:12,
+             mapTypeId:google.maps.MapTypeId.ROADMAP
+           };
+           var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+             marker.setMap(map);
+         }
+         google.maps.event.addDomListener(window, 'load', initialize);
+         google.maps.event.addDomListener(window, 'resize', initialize);
+         
+      </script>
+      <!--FINE SCRIPT PER GOOGLE MAPS-->
+   </head>
+    
+    
+   <body>
+      <div class="container-fluid">
+          
+          
+         <div class="row" style="background-image:url('img/slid2.jpg');background-size:cover;padding-bottom:8%;">
+             
+           
+                           <nav class="navbar navbar-inverse visible-xs">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand" href="#">Casa Della Musica</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="ChiSiamo.html">Chi Siamo</a></li>
+        <li><a href="LeCamere.html">Le Camere</a></li> 
+        <li><a href="Contattaci.html">Contattaci</a></li> 
+      </ul>
+    </div>
+  </div>
+</nav>
+             
+             
+            <div class="col-md-12 hidden-xs">
+               <div class="bnav">
+                  <div class="text-center">
+                     <div class="btn-group">
+                        <a href="index.html" class="btn btn-inverse btn-lg"><span class="glyphicon glyphicon-home"></span> <span class="testobottone">Home</span></a>
+                        <a href="ChiSiamo.html" class="btn btn-inverse btn-lg"><span class="glyphicon glyphicon-question-sign">                              </span> <span class="testobottone">Chi Siamo</span></a>
+                        <a href="LeCamere.html" class="btn btn-inverse btn-lg"><span class="glyphicon glyphicon-bed"></span>                                         <span class="testobottone">Le Camere</span></button>
+                        <a href="Contattaci.html" class="btn btn-inverse btn-lg"><span class="glyphicon glyphicon-comment"></span>                              <span class="testobottone">Contattaci</span></a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+             
+             
+          
+             
+            <div class="col-md-12">
+               <div class="jumbotron jumbo">
+                  <p id="titol" style="text-align:center;font-size:250%;font-weight:bold"></p>
+                  <br>
+                  <p name="descrizione" class="descrizione"></p>
+                  <br>
+                  <p class="descrizione" name="descrizione"></p>
+                  <br>
+                  <p name="descrizione" class="descrizione"></p>
+                  <br>
+                  <p name="descrizione" class="descrizione"></p>
+                  <br>
+                  <p name="descrizione" class="descrizione"></p>
+                  <br><br>
+               </div>
+            </div>
+         </div>
+          
+          
+         <!-----CARICO XML NELLA PAGINA-->
+         <script>
+            xmlhttp= new XMLHttpRequest();
+            xmlhttp.open("GET", "xml/Descrizione.xml",false);
+            xmlhttp.send();
+            xmlDoc=xmlhttp.responseXML;
+                
+            document.getElementById("titol").innerHTML = xmlDoc.getElementsByTagName("titolo")[0].childNodes[0].nodeValue;
+                
+            for(i=0;i<5;i++){    
+             document.getElementsByName("descrizione")[i].innerHTML = xmlDoc.getElementsByTagName("paragrafo")[i].childNodes[0].nodeValue;
+            }
+                 
+         </script>
+         <!-----FINE CARICAMENTO XML-->
+          
+          
+         <div class="row" style="padding-top:10px;padding-bottom:10px;">
+             
+            <div class="col-md-12" style="height:600px">
+                
+               <div class="row">
+                  <div id="googleMap" style="height:600px;width:100%"></div>
+                  <div class="col-md-2 wow fadeIn">
+                     <div class="infobox" style="width:300px;margin-top:90%;padding-top:2px">
+                        <b>
+                        <h2>Dove Siamo?</h2>
+                        </b>
+                        <br>
+                        <b>Casa Della Musica B&amp;B</b><br>
+                        Via Marconi 2<br>
+                        Vignone(VB)<br>
+                        28819<br>
+                        <br>
+                        <b>Telefono</b><br>
+                        <span class="glyphicon glyphicon-earphone"></span> 0323 - 550508<br>
+                        <br>
+                        <b>E-mail:</b><br>
+                        <span class="glyphicon glyphicon-envelope"></span> <a href="mailto:inserisciquilemail@gmail.com">casadellamusica.info@gmail.com</a><br>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+        
+         <div class="footer row">
+            <div style="display:inline-block;color:white;padding-top:35px;padding-left:60px;">
+               <span style="vertical-align:middle;">Casa della Musica B&amp;B<br>
+               Via Marconi 2<br>
+               288199 Vignone (VB)<br>
+               0323550508</span>
+            </div>
+            <div class="text-center"><span style="color:white">Website By Alessandro Sperotti</span></div>
+         </div>
+      </div>
+
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+             <script src="js/wow.js"></script>
+<script>new WOW().init();</script>
+   </body>
+</html>

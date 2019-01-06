@@ -1,0 +1,212 @@
+@font-face{
+    font-family:Viner;
+    src: url('viner.ttf')
+}
+
+.thumbio{
+    margin-top:100px;
+}
+
+.navbar-nav > li {
+    padding-left:10px;
+    padding-right:10px;
+}
+
+.navbar-nav > li:last-child {
+    margin-right:px;
+}
+
+body{
+    background-color:#151515
+}
+
+.overlay {
+
+margin-top:10px;
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+z-index: 100;
+pointer-events: none;
+  }
+
+
+.overlay a{
+    margin-left:30px;
+    width:107px;
+}
+
+.overlay:hover button{
+    background-color:gray;
+}
+
+.jumbodates{
+    background-color:rgba(50,50,50,0.8);
+    margin: 0 10% 0 10%;
+}
+
+.month, .year{
+    color: grey;
+    font-size:100%;
+    font-weight:bold;
+}
+
+.day{
+    text-align:center;
+    color:gray;
+    font-size:250%;
+    font-weight:bold;
+}
+
+.place{
+    vertical-align:middle;
+    font-weight:bold;
+    font-size:130%;
+    color:lightgray;
+    
+}
+
+.thumbnail{
+    background-color:inherit;
+    border:0px;
+    padding:0px;
+}
+
+.imgwrapper{
+    background:url(../img/eye.png) 50% 50% no-repeat;
+	-webkit-transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+	-o-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+}
+
+.imgwrapper:hover {
+	background-color:gray;
+    opacity:0.5;
+  
+}
+
+.jumboimg{
+    background-color:rgba(50,50,50,0.8);
+}
+
+.form-control{
+    margin-bottom:30px;
+    background-color:inherit;
+    border-color:lightgray;
+    color:lightgray;
+    height:55px;
+    font-size:110%
+}
+
+.btn-primary{
+    background-color:transparent;
+    border: solid 3px rgba(155,155,155,1)
+}
+
+.btn-primary:hover{
+    background-color:gray;
+}
+
+.form-group:nth-child(2){
+    margin-top:30px;
+}
+
+footer > .row{
+    margin-top:20px;
+}
+
+.col-md-1 > a{
+  opacity: 0.75;
+}
+
+.col-md-1 > a:hover{
+  opacity: 1;
+}
+
+@media (max-width:768px){
+    
+    .thumbio{
+        margin-top:30px;
+    }
+    
+    .month, .year{
+    color: grey;
+    font-size:80%;
+    font-weight:bold;
+}
+
+.day{
+    text-align:center;
+    color:gray;
+    font-size:200%;
+    font-weight:bold;
+}
+
+.place{
+    vertical-align:middle;
+    font-weight:bold;
+    font-size:100%;
+    color:lightgray;
+    
+}
+    
+    a.navbar-brand{
+        font-size:smaller;
+    }
+    
+    .col-md-3{
+        padding-left:30px;
+        padding-right:30px;
+        margin-left:auto;
+        margin-right:auto;
+        margin-bottom:10px;
+        max-width:500px;
+    }
+    
+    .col-md-4{
+        margin-left:15px
+    }
+    
+    .form-control{
+        height:40px;
+        font-size:90%;
+    }
+}
+
+
+footer{
+    margin-top:20px;
+}
+
+
+/*!
+ * Start Bootstrap - Scrolling Nav HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+@media(min-width:767px) {
+    .navbar {
+        padding: 20px 0;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+    .top-nav-collapse {
+        padding: 0;
+    }
+}

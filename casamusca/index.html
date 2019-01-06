@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Casa Della Musica B&amp;B</title>
+      <!-- Link ai CSS -->
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link href="css/StileSito.css" rel="stylesheet">
+       <link href="css/animate.css" rel="stylesheet">
+       <link href="css/bootstrap-datepicker.css" rel="stylesheet">
+   </head>
+   <body>
+       
+       
+
+       
+      <div class="container-fluid">
+          
+
+          
+          
+         <div class="row" style="background-image:url('img/slid1.jpg');background-size:cover;">
+             
+             
+                           <nav class="navbar navbar-inverse visible-xs">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand" href="#">Casa Della Musica</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="ChiSiamo.html">Chi Siamo</a></li>
+        <li><a href="LeCamere.html">Le Camere</a></li> 
+        <li><a href="Contattaci.html">Contattaci</a></li> 
+      </ul>
+    </div>
+  </div>
+</nav>
+             
+             
+            <div class="col-md-12 hidden-xs">
+               <div class="bnav">
+                  <div class="text-center">
+                     <div class="btn-group">
+                        <a href="index.html" class="btn btn-inverse btn-lg"><span class="glyphicon glyphicon-home"></span> <span class="testobottone">Home</span></a>
+                        <a href="ChiSiamo.html" class="btn btn-inverse btn-lg"><span class="glyphicon glyphicon-question-sign">                              </span> <span class="testobottone">Chi Siamo</span></a>
+                        <a href="LeCamere.html" class="btn btn-inverse btn-lg"><span class="glyphicon glyphicon-bed"></span>                                         <span class="testobottone">Le Camere</span></button>
+                        <a href="Contattaci.html" class="btn btn-inverse btn-lg"><span class="glyphicon glyphicon-comment"></span>                              <span class="testobottone">Contattaci</span></a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+             
+             
+          
+             
+            <div class="col-md-12">
+               <p class="sottotitolo" style="font-size:300%"><b>Benvenuti alla Casa della Musica B&amp;B</b></p>
+               <p class="sottotitolo">Il migliore B&amp;B situato sul Lago Maggiore.</p>
+            </div>
+             
+             <div class="col-md-12 text-center"><button class="btn btn-primary btn-lg" style="margin-bottom:200px;margin-top:100px" data-toggle="modal" data-target="#registrazione">Prenota Ora!</button></div>
+         </div>
+          
+          
+         <div class="row">
+            <div class="jumbotron jumbocamerehome">
+               <div class = "container">
+                   
+                  <div class="row">
+                      
+                     <div class="col-md-6 wow fadeIn">
+                        <h2>Le Camere</h2>
+                        <br>
+                        <p>Che sia per una breve vacanza lavoro o un lungo soggiorno, B&amp;B Casa della musica offre un soggiorno adatto a qualsiasi tipo di viaggio. Ogni camera dispone di una splendida vista sul lago per garantire un fantastico soggiorno sul lago maggiore.<br><br>
+                           I nostri servizi sono Wi-Fi gratuito, colazione dolce e salata, ed una fantastica sala della musica, a completa disposizione dei nostri ospiti, gratuitamente.  <br><br> Saremo più che lieti di accogliervi.
+                        </p>
+                     </div>
+                      
+                     <div class="col-md-6 wow fadeInRight">
+                        <div class="thumbnail" style="background-color:inherit;margin-top:30px">
+                           <img src="img/camera1.jpg" class="img-rounded">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+          
+          
+         <div class="row" style="background-image:url('img/img%20(1).jpg');background-size:cover">
+             
+            <div class="col-md-12 text-center">
+               <div class="jumbotron jumbo wow fadeIn" style="margin-top:40px;margin-bottom:40px;">
+                   
+                  <div class="row" style="margin-bottom:15px">
+                     <div class="col-md-2 text-left"><img src="img/calendar-128.png" height="96px" width="96px"></div>
+                     <div class="col-md-8 text-center">
+                         <h2><b>Eventi: </b></h2>
+                     </div>
+                  </div>
+                   
+                   
+                  <div class="row text-left">
+                     <dl class="eventi">
+                        <dt>Evento 1</dt>
+                        <dd></dd><br>
+                        <dt>Evento 2</dt>
+                        <dd></dd><br>
+                        <dt>Evento 3</dt>
+                        <dd></dd><br>
+                        <dt>Evento 4</dt>
+                        <dd></dd><br>
+                        <dt>Evento 5</dt>
+                        <dd></dd>
+                     </dl>
+                  </div>
+               </div>
+            </div>
+             
+             
+            <!-----CARICO XML NELLA PAGINA-->
+            <script>
+               var i;
+               xmlhttp= new XMLHttpRequest();
+               xmlhttp.open("GET", "xml/Eventi.xml",false);
+               xmlhttp.send();
+               xmlDoc=xmlhttp.responseXML;
+                   
+               for(i=0;i<5;i++){
+                   document.getElementsByTagName("dt")[i].innerHTML = xmlDoc.getElementsByTagName("evento")[i].childNodes[0].nodeValue;
+                   document.getElementsByTagName("dd")[i].innerHTML = xmlDoc.getElementsByTagName("descrizione")[i].childNodes[0].nodeValue;
+               }
+               
+                    
+            </script>
+            <!-----FINE CARICAMENTO XML-->    
+         </div>
+          
+          
+         <div class="footer row">
+            <div class="informazionifooter">
+               <span style="vertical-align:middle;">Casa della Musica B&amp;B<br>
+               Via Marconi 2<br>
+               28819 Vignone (VB)<br>
+               0323550508</span>
+            </div>
+            <div class="text-center"><span style="color:white">Website By Alessandro Sperotti</span></div>
+         </div>
+
+      </div>
+
+        <div class="modal fade" id="registrazione" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h3 class="modal-title">Prenota</h3>
+      </div>
+      <div class="modal-body" style="padding: 10px 30px 0 30px">
+        
+        <form class="form-group" id="formregistrazione" action="../scripts/prenota.php" method="post">
+          
+        <label>Nome</label>
+            <div class="input-group">
+                <div class="input-group-addon"><span class="glyphicon glyphicon-user"></span></div>
+        <input id="nomeReg" type="text" name="nome" class="form-control" placeholder="Nome" required ></input>
+            </div>
+          
+        <label style="margin-top:5px">Cognome</label>
+          <div class="input-group">
+             <div class="input-group-addon"><span class="glyphicon glyphicon-user"></span></div>  
+        <input id="cognomeReg" type="text" name="cognome" class="form-control" placeholder="Cognome" required>
+          </div><br>
+          
+           <strong>Data di Check-In:</strong>
+                   <div class="input-group date">
+                    <input type="text" id="checkin" name="chckin" class="form-control" required>
+                    <div class="input-group-addon">
+                    <span class="glyphicon glyphicon-th"></span>
+                    </div>
+                    </div><br>
+                    
+              <strong>Data di Check-Out</strong>
+                   <div class="input-group date">
+    <input type="text" class="form-control" id="checkout" name="chckout" required>
+    <div class="input-group-addon">
+        <span class="glyphicon glyphicon-th"></span>
+    </div>
+</div><br>
+            
+        <label >Numero di telefono</label>   
+          <div class="input-group">
+               <div class="input-group-addon"><span class="glyphicon glyphicon-earphone"></span></div>
+        <input id="telReg" type="text" name="tel" placeholder="Numero di telefono (opzionale)" class="form-control"></input><br>
+            </div><br>
+            
+        <label>Indirizzo Email</label>
+        <div class="input-group">
+             <div class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></div>
+            <input id="emailReg" type="Email" name="email" class="form-control" placeholder="Email" required ></input><br>
+        </div>
+          
+          
+      </div>
+      <div class="modal-footer text-center">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Chiudi</button>
+        <button type="submit" class="btn btn-success" ><span class="glyphicon glyphicon-send" ></span> Prenota</button></form>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="scripts/ScriptSito.js"></script>
+      <script src="js/wow.js"></script>
+      <script src="js/bootstrap-datepicker.min.js">
+</script><script>new WOW().init();</script>
+<script>
+          $('#checkin').datepicker({
+              startDate: new Date(),
+    format: "dd/mm/yyyy",
+    language: "it",
+});
+    
+        $('#checkout').datepicker({
+            startDate: new Date(),
+    format: "dd/mm/yyyy",
+    language: "it",
+});
+    </script>
+   </body>
+</html>

@@ -1,0 +1,101 @@
+<camere>
+    <camera>
+        <nome>Camera Rolling Stones</nome>
+        <immagine>../img/camera1.jpg</immagine>
+        <dimensioni>10 m^2</dimensioni>
+        <persone>2</persone>
+        <letto>Due letti singoli</letto>
+        <stanze>1</stanze>
+        <bagno>Condiviso</bagno>
+        <canc>Una settimana prima del check-in</canc>
+        <prezzo>40€ a notte</prezzo>
+    </camera>
+    <camera>
+        <nome>Camera Elton John</nome>
+        <immagine>../img/camera2.jpg</immagine>
+        <dimensioni>25 m^2</dimensioni>
+        <persone>3</persone>
+        <letto>Un letto matrimoniale ed un letto singolo</letto>
+        <stanze>1</stanze>
+        <bagno>Condiviso</bagno>
+        <canc>Una settimana prima del check-in</canc>
+        <prezzo>60€ a notte</prezzo>
+    </camera> 
+    <camera>
+        <nome>Camera Bob Dylan</nome>
+        <immagine>../img/camera3.jpg</immagine>
+        <dimensioni>10 m^2</dimensioni>
+        <persone>2</persone>
+        <letto>Un letto matrimoniale</letto>
+        <stanze>1</stanze>
+        <bagno>Condiviso</bagno>
+        <canc>Una settimana prima del check-in</canc>
+        <prezzo>50€ a notte</prezzo>
+    </camera>
+    <camera>
+        <nome>Camera Jimmy Page</nome>
+        <immagine>../img/camera4.jpg</immagine>
+        <dimensioni>17 m^2</dimensioni>
+        <persone>2</persone>
+        <letto>Un letto matrimoniale</letto>
+        <stanze>2</stanze>
+        <bagno>Interno</bagno>
+        <canc>Una settimana prima del check-in</canc>
+        <prezzo>70€ a notte</prezzo>
+    </camera>
+    <camera>
+        <nome>Camera Beatles</nome>
+        <immagine>../img/camera5.jpg</immagine>
+        <dimensioni>15 m^2</dimensioni>
+        <persone>2</persone>
+        <letto>Due letti singoli</letto>
+        <stanze>1</stanze>
+        <bagno>Condiviso</bagno>
+        <canc>Due settimane prima del check-in</canc>
+        <prezzo>40€ a notte</prezzo>
+    </camera>
+    <camera>
+        <nome>Camera Jim Morrison</nome>
+        <immagine>../img/camera6.png</immagine>
+        <dimensioni>30 m^2</dimensioni>
+        <persone>3</persone>
+        <letto>Un letto matrimoniale</letto>
+        <stanze>3</stanze>
+        <bagno>Interno</bagno>
+        <canc>Due settimane prima del check-in</canc>
+        <prezzo>100€ a notte</prezzo>
+    </camera>
+    <camera>
+        <nome>Camera Toto</nome>
+        <immagine>../img/camera7.jpg</immagine>
+        <dimensioni>20 m^2</dimensioni>
+        <persone>2</persone>
+        <letto>Un letto matrimoniale</letto>
+        <stanze>2</stanze>
+        <bagno>Interno</bagno>
+        <canc>Una settimana prima del check-in</canc>
+        <prezzo>60€ a notte</prezzo>
+    </camera>
+    <camera>
+        <nome>Camera Deep Purple</nome>
+        <immagine>../img/camera10.jpg</immagine>
+        <dimensioni>30 m^2</dimensioni>
+        <persone>3</persone>
+        <letto>Un letto matrimoniale ed un letto singolo</letto>
+        <stanze>3</stanze>
+        <bagno>Interno</bagno>
+        <canc>Due settimane prima del check-in</canc>
+        <prezzo>90€ a notte</prezzo>
+    </camera>
+    <camera>
+        <nome>Camera Eagles</nome>
+        <immagine>../img/camera8.jpg</immagine>
+        <dimensioni>30 m^2</dimensioni>
+        <persone>2</persone>
+        <letto>Un letto matrimoniale</letto>
+        <stanze>2</stanze>
+        <bagno>Interno</bagno>
+        <canc>Una settimana prima del check-in</canc>
+        <prezzo>70€ a notte</prezzo>
+    </camera>
+</camere>

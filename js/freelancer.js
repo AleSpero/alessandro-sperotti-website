@@ -1,0 +1,67 @@
+
+// jQuery for page scrolling feature - requires jQuery Easing plugin
+$(function() {
+    $('body').on('click', '.page-scroll a', function(event) {
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top
+        }, 1500, 'easeInOutExpo');
+        event.preventDefault();
+    });
+});
+
+// Floating label headings for the contact form
+$(function() {
+    $("body").on("input propertychange", ".floating-label-form-group", function(e) {
+        $(this).toggleClass("floating-label-form-group-with-value", !! $(e.target).val());
+    }).on("focus", ".floating-label-form-group", function() {
+        $(this).addClass("floating-label-form-group-with-focus");
+    }).on("blur", ".floating-label-form-group", function() {
+        $(this).removeClass("floating-label-form-group-with-focus");
+    });
+});
+
+// Highlight the top nav as scrolling occurs
+$('body').scrollspy({
+    target: '.navbar-fixed-top'
+})
+
+// Closes the Responsive Menu on Menu Item Click
+$('.navbar-collapse ul li a').click(function() {
+    $('.navbar-toggle:visible').click();
+});
+
+
+//Navbar Opacity
+
+/*//Navbar Opacity
+
+$(window).scroll(function() {
+   var hT = $('#about').offset().top,
+       hH = $('#about').outerHeight(),
+       wH = $(window).height(),
+       wS = $(this).scrollTop();
+   if (wS > (400)){
+       
+       $("nav").animate({
+       
+           backgroundColor: "rgb(44, 62, 80)"
+           
+       });
+       
+    }
+    
+    else{
+        
+        $("nav").animate({
+       
+           backgroundColor: "rgba(44, 62, 80, 0.4)"
+           
+       });
+        
+    }
+     
+});*/
+
+
+

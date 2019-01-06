@@ -1,0 +1,177 @@
+.eventi{
+    margin-left:20px;
+    margin-top:10px;
+    font-size:150%;
+}
+
+.jumbo{
+    margin-left:7%;
+    margin-right:7%;
+    background-color:rgba(200,200,200,0.8);
+}
+
+.jumboareapersonale{
+     background-color:rgba(200,200,200,0.9);
+}
+
+
+.colonnacamere{
+    padding-left:5%;
+    padding-right:5%;
+}
+
+.main{
+    background-image:url('img/slid1.jpg');
+    background-size:cover;
+}
+
+.informazionifooter{
+    display:inline-block;
+    color:white;
+    padding-top:35px;
+    padding-left:60px;
+}
+
+.sottotitolo{ 
+text-align: center;
+font-size: 150%
+}
+
+.bordoform{
+    padding-top: 15px;
+    padding-bottom: 5px;
+    margin-bottom:10px;
+    background-color:rgba(200,200,200,0.8);
+} 
+
+
+.zonacamere{
+    background-color:rgba(245,245,245,1);
+    padding-top:40px;
+    padding-bottom:40px;
+}
+
+.camera{
+    background-color:lightgray;
+    padding:7px;
+    display:inline-block;
+}
+
+.widget{
+    display: inline-block;
+    padding:15px;
+    background-color:rgba(169,169,169,0.9);
+    margin-top:50px;
+}
+
+.widget:hover{
+    background-color:rgba(130,130,130,0.9);
+}
+
+.camera:hover{
+      box-shadow: 2px 2px 5px #888888;
+}
+
+.paddingform{
+    padding-left:10%;
+    padding-right:10%;
+    margin-top:20px;
+    margin-bottom:20px
+}
+
+
+
+.bnav{
+    margin-top:5px;
+    margin-bottom:10%;
+
+}
+
+.footer{
+    height:150px;
+    background-color: #444444;
+   
+}
+
+/* Inizio Codice importato da un sito per creare i bottoni della navbar */
+
+.btn-inverse {
+  color: #ffffff;
+  background-color: #363636;
+  *background-color: #222222;
+  border-right: black;
+
+
+  background-image: linear-gradient(to bottom, #222222, #444444);
+  background-repeat: repeat-x;
+  
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff444444', endColorstr='#ff222222', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, .2);
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .15), 0 1px 1px rgba(0, 0, 0, .075);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .15), 0 1px 1px rgba(0, 0, 0, .075);
+}
+
+.btn-inverse:hover{
+     color: rgba(255, 255, 255, 0.75);
+}
+.btn-inverse:focus,
+.btn-inverse:active,
+.btn-inverse.active,
+.btn-inverse.disabled,
+.btn-inverse[disabled] {
+  color: #ffffff;
+  background-color: #222222;
+  *background-color: #151515;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+             box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+}
+
+.btn-inverse:active,
+.btn-inverse.active {
+  background-color: #080808 \9;
+}
+
+.btn-inverse.active {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+/* Fine codice importato */
+
+.infobox{
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color:rgba(200,200,200,0.8);
+    padding: 20px;
+}
+
+.testobottone, .glyphicon{
+    font-size:smaller;
+}
+
+.descrizione{
+    font-size:150%;
+}
+
+.modal-content{
+    background-color:rgba(252,252,252,0.95);
+    border-radius:0;
+}
+
+#colgoogle {position: relative;}
+
+#googleMap {position: absolute; top: 0; right: 0; bottom: 0; left: 0; height: 300px; width:100%;}
+
+@media(max-width:768px){
+    
+    
+    .descrizione{
+        font-size:smaller;
+    }
+    
+    .col-md-12 > .sottotitolo {
+        
+        color:white;
+    }
+    
+}

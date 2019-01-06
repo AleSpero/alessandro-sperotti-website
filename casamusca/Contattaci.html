@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Casa Della Musica B&amp;B</title>
+      <!-- Link ai CSS -->
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link href="css/StileSito.css" rel="stylesheet">
+   </head>
+    
+    
+   <body>
+      <div class="container-fluid">
+          
+         <div class="row" style="background-image:url('img/img%20(8).jpg');background-size:cover;padding-bottom:8%;">
+             
+             <nav class="navbar navbar-inverse visible-xs">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand" href="#">Casa Della Musica</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="ChiSiamo.html">Chi Siamo</a></li>
+        <li><a href="LeCamere.html">Le Camere</a></li> 
+        <li><a href="Contattaci.html">Contattaci</a></li> 
+      </ul>
+    </div>
+  </div>
+</nav>
+             
+             
+            <div class="col-md-12 hidden-xs">
+               <div class="bnav">
+                  <div class="text-center">
+                     <div class="btn-group">
+                        <a href="index.html" class="btn btn-inverse btn-lg"><span class="glyphicon glyphicon-home"></span> <span class="testobottone">Home</span></a>
+                        <a href="ChiSiamo.html" class="btn btn-inverse btn-lg"><span class="glyphicon glyphicon-question-sign">                              </span> <span class="testobottone">Chi Siamo</span></a>
+                        <a href="LeCamere.html" class="btn btn-inverse btn-lg"><span class="glyphicon glyphicon-bed"></span>                                         <span class="testobottone">Le Camere</span></button>
+                        <a href="Contattaci.html" class="btn btn-inverse btn-lg"><span class="glyphicon glyphicon-comment"></span>                              <span class="testobottone">Contattaci</span></a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+             
+            <div class="col-md-12">
+               <div class="jumbotron jumbo">
+                  <p style="text-align:center;font-size:250%;"><b>Hai una domanda da farci? Scrivici!</b></p>
+                  <br>
+                   
+                  <div style="margin-left:20%; margin-right:20%">
+                     <form class="form-group" action="../scripts/contact.php" method="post">
+                        <b>Nome e Cognome</b>
+                        <input type="text" name="nomecognome" class="form-control" placeholder="Nome e Cognome" required ></input><br>
+                        <b>Indirizzo Email</b>
+                        <input type="Email" name="email" class="form-control" placeholder="Email" required ></input><br>
+                        <b>Numero di telefono</b>    
+                        <input type="text" name="tel" placeholder="Numero di telefono (opzionale)" class="form-control"></input><br>
+                        <b>Messaggio</b>
+                        <textarea style="resize:none" name="message" class="form-control" placeholder="Inserisci qui il tuo messaggio..." rows="6" cols="50" required></textarea>
+                        <br>
+                        <button type="submit" class="btn btn-primary">Invia Messaggio</button>  
+                     </form>
+                   </div>
+          
+               </div>
+            </div>
+         </div>
+
+
+         <div class="footer row">
+            <div style="display:inline-block;color:white;padding-top:35px;padding-left:60px;">
+               <span style="vertical-align:middle;">Casa della Musica B&amp;B<br>
+               Via Marconi 2<br>
+               28819 Vignone (VB)<br>
+               0323550508</span>
+            </div>
+            <div class="text-center"><span style="color:white">Website By Alessandro Sperotti</span></div>
+         </div>
+      </div>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="scripts/ScriptSito.js"></script>
+   </body>
+</html>
