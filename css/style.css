@@ -211,12 +211,39 @@ header.nav-new {
     line-height: 32px;
     color: #101010;
 }
+.banner-stats{
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+    margin: 0 0 40px;
+    padding: 24px 0;
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+}
+.stat-item{
+    text-align: center;
+}
+.stat-item strong{
+    display: block;
+    font-size: 36px;
+    font-weight: 900;
+    color: #00B0FF;
+    line-height: 1;
+    margin-bottom: 4px;
+}
+.stat-item span{
+    font-size: 14px;
+    font-weight: 400;
+    color: #4A5A6B;
+    letter-spacing: 0.3px;
+}
 .banner-profile h6{
-    font-size: 24px;
+    font-size: 22px;
     font-weight: normal;
-    color: #101010;
-    margin: 0 0 60px;
+    color: #4A5A6B;
+    margin: 0 0 40px;
     line-height: 32px;
+    text-align: center;
 }
 .btn-main{
     padding: 12px 30px 12px 25px;
@@ -243,7 +270,7 @@ header.nav-new {
 
 /* ***** Nice To Meet ****** */
 .nice-meet-wrp{
-    padding: 72px 0 30px;
+    padding: 72px 0 60px;
     background: linear-gradient(232.93deg, rgba(0,176,255,1) -0.53%,rgba(82,201,255,1) 91.37%);
     position: relative;
 }
@@ -256,127 +283,102 @@ header.nav-new {
     margin: 0 auto 25px;
 }
 .nice-meet-wrp h6{
-    font-size: 24px;
+    font-size: 22px;
     font-weight: normal;
     color: #fff;
     line-height: 32px;
     max-width: 770px;
-    margin: 0 auto 35px;
+    margin: 0 auto 45px;
     text-align: center;
 }
-.nice-row{
+.services-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-bottom: 48px;
+}
+.service-card{
     background: #fff;
-    box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.4);
-    border-radius: 24px;
-    border: 1px solid rgba(0, 176, 255, 1);
-    display: flex;
-    flex-wrap: wrap;
-    height: 100%;
+    border-radius: 20px;
+    padding: 36px 28px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
-.nice-row .nice-box{
-    display: flex;
-    flex-flow: column;
-    width: 33.33%;
-    border-right: 1px solid #bbb;
-    padding: 70px 20px 35px;
+.service-card:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.14);
 }
-.nice-row .nice-box:last-child{
-    border-right: none;
-}
-.nice-ic{
-    width: 70px;
-    height: 70px;
-    background: rgba(74,90,107,0.78);
-    border-radius: 100%;
-    margin: 0 auto 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.nice-box h3{
+.service-card i{
     font-size: 28px;
-    font-weight: bold;
-    color: #4A5A6B;
-    text-align: center;
-    margin: 0 auto 15px;
+    color: #00B0FF;
+    margin-bottom: 16px;
+    display: block;
 }
-.nice-box p{
-    font-size: 16px;
-    font-weight: normal;
+.service-card h3{
+    font-size: 22px;
+    font-weight: 800;
     color: #101010;
-    line-height: 24px;
-    text-align: center;
-    margin: 0 0 25px;
+    margin: 0 0 10px;
 }
-.nice-data p:last-child{
+.service-card p{
+    font-size: 15px;
+    font-weight: 400;
+    color: #4A5A6B;
+    line-height: 24px;
     margin: 0;
 }
-.nice-data{
-    min-height: 250px;
-}
-.nice-data h4{
-    font-size: 16px;
-    font-weight: bold;
-    color: #00B0FF;
+.tech-stack{
     text-align: center;
-    margin: 0 auto 5px;
+    margin-bottom: 40px;
 }
-.nice-data ul li{
-    text-align: center;
+.tech-label{
+    display: block;
     font-size: 14px;
-    font-weight: normal;
-    color: #001E00;
-    line-height: 22px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.85);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 16px;
 }
-
-.up-btn{
-    padding: 10px 25px;
+.tech-pills{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+.tech-pill{
+    padding: 6px 18px;
     border-radius: 30px;
-    background: #6FDA44;
-    font-size: 18px;
-    font-weight: bold;
+    background: rgba(255, 255, 255, 0.18);
+    border: 1px solid rgba(255, 255, 255, 0.45);
     color: #fff;
-    margin: 0 auto;
-    display: table;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    transition: background 0.2s ease;
 }
-.up-btn img{
-    display: inline-block;
-    width: 25px;
-    margin-right: 5px;
+.tech-pill:hover{
+    background: rgba(255, 255, 255, 0.32);
 }
-.up-btn:hover{
-    background: #101010;
-    color: #fff;
-}
-.fivrebtn{
-    background: #1DBF73;
-}
-.actionbox span{
-    margin: 15px auto;
-    font-size: 18px;
-    font-weight: normal;
-    color: #101010;
-    display: table;
-}
-.actionbox .btn-main{
-    padding: 8px 35px;
-    border: 2px solid #00B0FF;
-    color: #00B0FF;
-    font-size: 18px;
-    font-weight: bold;
+.btn-main-outline{
     background: transparent;
-    width: auto;
-    display: table;
-}
-.actionbox .btn-main:hover{
-    background: #00B0FF;
+    border: 2px solid #fff;
     color: #fff;
+    width: auto;
+    padding: 12px 36px;
+    white-space: nowrap;
+}
+.btn-main-outline:hover{
+    background: #fff;
+    color: #00B0FF;
 }
 /* ***** End Nice To Meet ****** */
 
 /* ***** Work ***** */
 .work-wrp{
-    padding: 35px 0 35px;
+    padding: 60px 0 35px;
     position: relative;
 }
 .work-wrp h2{
@@ -386,60 +388,150 @@ header.nav-new {
     text-align: center;
     margin: 0 auto 50px;
 }
-.work-wrp .row{
-    margin: 0 -20px;
+
+/* Project Cards */
+.project-list{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
 }
-.work-wrp .row .col-md-4{
-    padding: 0 20px;
+.project-card{
+    display: flex;
+    align-items: center;
+    gap: 48px;
 }
-.work-box{
-    position: relative;
-    margin: 0 0 40px;
+.project-screenshots{
+    display: flex;
+    gap: 28px;
+    flex-shrink: 0;
+    justify-content: center;
 }
-.work-box img{
-    width: 100%;
-    border-radius: 30px;
+.project-screenshots img{
+    width: 220px;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s ease;
 }
-.work-overlay{
+.project-screenshots img:hover{
+    transform: scale(1.05);
+    cursor: zoom-in;
+}
+
+/* Lightbox */
+.lightbox{
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    background: rgba(0, 0, 0, 0.85);
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+.lightbox.active{
+    display: flex;
+}
+.lightbox img{
+    max-height: 90vh;
+    max-width: 90vw;
+    border-radius: 16px;
+    box-shadow: 0 16px 64px rgba(0, 0, 0, 0.4);
+    animation: lightboxIn 0.25s ease;
+}
+@keyframes lightboxIn{
+    from{opacity: 0;transform: scale(0.92);}
+    to{opacity: 1;transform: scale(1);}
+}
+.lightbox-close{
     position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 30px;
-    padding: 45px;
-    background: linear-gradient(232.93deg, rgba(0,176,255,1) -0.53%,rgba(82,201,255,1) 91.37%);
-    top: 0;
-    left: 0;
-    right: 0;
-    transition: .4s linear;
-    -webkit-transition: .4s linear;
-    opacity: 0;
-    visibility: hidden;
+    top: 20px;
+    right: 28px;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 40px;
+    cursor: pointer;
+    line-height: 1;
+    transition: 0.2s ease;
 }
-.work-overlay h3{
+.lightbox-close:hover{
+    transform: scale(1.2);
+}
+.project-info{
+    flex: 1;
+}
+.project-tag{
+    display: inline-block;
+    padding: 5px 16px;
+    background: rgba(0, 176, 255, 0.1);
+    color: #00B0FF;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 20px;
+    margin-bottom: 14px;
+    letter-spacing: 0.3px;
+}
+.project-info h3{
+    font-size: 34px;
+    font-weight: 900;
+    color: #101010;
+    margin: 0 0 8px;
+}
+.project-subtitle{
+    display: block;
     font-size: 18px;
-    font-weight: normal;
-    color: #fff;
-    line-height: 26px;
-    text-align: center;
-    margin: 0 auto 15px;
+    font-weight: 400;
+    color: #4A5A6B;
+    margin-bottom: 22px;
 }
-.work-overlay a{
-    padding:7px 30px;
+.project-features{
+    list-style: none;
+    padding: 0;
+    margin: 0 0 24px;
+}
+.project-features li{
+    position: relative;
+    padding-left: 22px;
+    font-size: 16px;
+    line-height: 28px;
+    color: #333;
+    margin-bottom: 8px;
+}
+.project-features li::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #00B0FF;
+}
+.project-features li:last-child{
+    margin-bottom: 0;
+}
+.project-links{
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+}
+.project-links a{
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 22px;
+    border: 2px solid #00B0FF;
     border-radius: 30px;
-    border: 2px solid #fff;
-    color: #fff;
-    font-size: 15px;
+    color: #00B0FF;
+    font-size: 16px;
     font-weight: 600;
-    margin: 0 auto;
-    display: table;
 }
-.work-overlay a:hover{
-    background: #fff;
-    color: rgba(0,176,255,1);
+.project-links a:hover{
+    background: #00B0FF;
+    color: #fff;
 }
-.work-box:hover .work-overlay{
-    opacity: 1;
-    visibility: visible;
+.project-links a i{
+    font-size: 16px;
 }
 
 
@@ -452,22 +544,34 @@ header.nav-new {
 .companies-wrp h2{
     font-size: 50px;
     font-weight: bold;
-    color: #101010;
+    color: #4A5A6B;
     text-align: center;
     margin: 0 auto 35px;
 }
 .companies-wrp ul{
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
+    gap: 12px 0;
 }
 .companies-wrp ul li{
-    padding: 10px;
-    width: 25%;
+    padding: 10px 20px;
+    width: calc(100% / 4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .companies-wrp ul li img{
     max-width: 100%;
-    width: 100%;
+    max-height: 60px;
+    width: auto;
+    object-fit: contain;
+    mix-blend-mode: multiply;
+    transition: 0.3s ease;
+}
+.companies-wrp ul li img:hover{
+    transform: scale(1.1);
 }
 /* ***** End Work ***** */
 
@@ -476,25 +580,66 @@ header.nav-new {
     padding: 75px 0;
     position: relative;
 }
-.contact-wrp h2{
-    font-size: 50px;
-    font-weight: bold;
-    color: #101010;
-    text-align: center;
-    margin: 0 0 30px;
+.contact-layout{
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
 }
-.contact-wrp h6{
-    font-size: 24px;
-    font-weight: normal;
+.contact-info{
+    flex: 1;
+}
+.contact-info h2{
+    font-size: 48px;
+    font-weight: bold;
+    color: #4A5A6B;
+    margin: 0 0 20px;
+    line-height: 1.1;
+}
+.contact-lead{
+    font-size: 20px;
+    font-weight: 400;
     color: #101010;
+    line-height: 30px;
+    margin: 0 0 20px;
+}
+.contact-desc{
+    font-size: 16px;
+    font-weight: 400;
+    color: #4A5A6B;
+    line-height: 26px;
+    margin: 0 0 32px;
+}
+.contact-channels{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.contact-channel{
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #00B0FF;
+    transition: 0.2s ease;
+}
+.contact-channel:hover{
+    color: #0090d0;
+}
+.contact-channel i{
+    font-size: 20px;
+    width: 24px;
     text-align: center;
-    line-height: 32px;
-    max-width: 760px;
-    margin: 0 auto 45px;
 }
 .cnt-frm{
-    max-width: 490px;
-    margin: 0 auto;
+    flex: 1;
+    max-width: 460px;
+}
+.cnt-frm h3{
+    font-size: 22px;
+    font-weight: 800;
+    color: #4A5A6B;
+    margin: 0 0 20px;
 }
 .cnt-frm .form-group{
     margin: 0 0 15px;
@@ -509,22 +654,27 @@ header.nav-new {
 .cnt-frm .form-group .form-control{
     padding: 10px 15px;
     border-radius: 12px;
-    border: 2px solid #00B0FF;
+    border: 2px solid #e0e0e0;
     height: auto;
     box-shadow: none;
     color: #111;
     font-size: 15px;
     font-weight: 500;
     resize: none;
+    transition: border-color 0.2s ease;
+}
+.cnt-frm .form-group .form-control:focus{
+    border-color: #00B0FF;
+    outline: none;
 }
 .cnt-frm .form-group textarea.form-control{
-    border-radius: 24px;
+    border-radius: 16px;
 }
 .cnt-frm .btn-main{
     border: none;
     font-size: 18px;
     width: 150px;
-    margin: 15px auto 0;
+    margin: 15px 0 0;
 }
 .cnt-frm .btn-main i{
     margin-right: 10px;

@@ -17,36 +17,35 @@
 	.profile-img img{width: 150px;height: 150px}
 	.profile-data h1{font-size: 24px;line-height: 30px;}
 	.profile-data p{font-size: 16px;line-height: 24px;}
-	.banner-profile h6{font-size: 16px;line-height: 24px;margin: 0 auto 35px;}
+	.banner-stats{gap: 30px;margin: 0 0 30px;padding: 20px 0;}
+	.stat-item strong{font-size: 28px;}
+	.stat-item span{font-size: 12px;}
+	.banner-profile h6{font-size: 16px;line-height: 24px;margin: 0 auto 30px;}
 	.btn-main{font-size: 16px;width: 180px;}
 
-	.nice-meet-wrp{padding: 50px 0;}
+	.nice-meet-wrp{padding: 50px 0 40px;}
 	.nice-meet-wrp h2{font-size: 28px;line-height: 38px;margin: 0 auto 15px;}
-	.nice-meet-wrp h6{font-size: 18px;line-height: 26px;}
-	.nice-row .nice-box{padding: 30px 15px;}
-	.nice-row .nice-box:last-child{border: none;}
-	.nice-box h3{font-size: 22px;}
-	.actionbox .btn-main,.up-btn{font-size: 14px;}
-	.actionbox span{margin: 5px auto;}
-	.nice-box p{font-size: 14px;line-height: 22px;margin: 0 0 10px;}
-	.up-btn img{width: 20px;}
-	.nice-ic{width: 55px;height: 55px;}
-	.nice-ic img{width: 25px;}
+	.nice-meet-wrp h6{font-size: 18px;line-height: 26px;margin: 0 auto 30px;}
+	.services-grid{gap: 18px;margin-bottom: 36px;}
+	.service-card{padding: 28px 22px;}
+	.service-card h3{font-size: 20px;}
+	.service-card p{font-size: 14px;line-height: 22px;}
 
 	.work-wrp{padding: 45px 0;}
 	.work-wrp h2{font-size:32px;margin: 0 auto 30px;}
+	.project-list{gap: 45px;}
+	.project-card{gap: 32px;}
+	.project-screenshots img{width: 140px;border-radius: 16px;}
+	.project-info h3{font-size: 24px;}
+	.project-features li{font-size: 14px;line-height: 22px;}
 	.companies-wrp{margin: 0;padding: 35px 0;}
 	.companies-wrp ul li{width: 25%;}
-	.work-box img{border-radius: 15px;}
-	.work-overlay{padding: 15px;}
-	.work-overlay h3{font-size: 14px;line-height: 22px;}
-	.work-overlay a{padding: 5px 20px;font-size: 12px;}
-	.work-wrp .row{margin: 0 -10px;}
-	.work-wrp .row .col-md-4{padding:0 10px;}
 
 	.contact-wrp{padding: 45px 0;}
-	.contact-wrp h2{font-size: 32px;margin: 0 auto 15px;}
-	.contact-wrp h6{font-size: 18px;line-height: 26px;margin: 0 auto 30px;}
+	.contact-layout{gap: 40px;}
+	.contact-info h2{font-size: 32px;}
+	.contact-lead{font-size: 17px;line-height: 26px;}
+	.contact-desc{font-size: 14px;line-height: 22px;}
 
 	footer{padding: 40px 0;}
 	footer h3{font-size: 24px;}
@@ -72,24 +71,46 @@
 	.profile-img img{width: 230px;height: 230px}
 	.profile-data h1{font-size: 28px;text-align: center;line-height: 34px;}
 	.profile-data p{font-size: 18px;text-align: center;line-height: 26px;}
-	.banner-profile h6{font-size: 16px;text-align: center;line-height: 24px;margin: 0 auto 35px;}
+	.banner-stats{gap: 24px;margin: 0 0 24px;padding: 18px 0;}
+	.stat-item strong{font-size: 26px;}
+	.stat-item span{font-size: 11px;}
+	.banner-profile h6{font-size: 16px;text-align: center;line-height: 24px;margin: 0 auto 28px;}
 	.btn-main{font-size: 16px;width: 180px;}
 
-	.nice-meet-wrp{padding: 50px 0;}
-	.nice-meet-wrp h2{font-size: 28px;line-height: 38px;margin: 0 auto 15px;}
-	.nice-meet-wrp h6{font-size: 18px;line-height: 26px;}
-	.nice-row .nice-box{width: 100%;padding: 40px 15px;border: none;border-bottom: 1px solid #bbb;}
-	.nice-row .nice-box:last-child{border: none;}
-	.nice-box h3{font-size: 24px;}
+	.nice-meet-wrp{padding: 40px 0 36px;}
+	.nice-meet-wrp h2{font-size: 26px;line-height: 34px;margin: 0 auto 15px;}
+	.nice-meet-wrp h6{font-size: 16px;line-height: 24px;margin: 0 auto 28px;}
+	.services-grid{grid-template-columns: 1fr;gap: 16px;margin-bottom: 32px;}
+	.service-card{padding: 24px 20px;}
+	.service-card i{font-size: 24px;margin-bottom: 12px;}
+	.service-card h3{font-size: 19px;}
+	.service-card p{font-size: 14px;line-height: 22px;}
+	.tech-label{font-size: 12px;}
+	.tech-pill{font-size: 13px;padding: 5px 14px;}
 
-	.work-wrp{padding: 45px 0;}
+	.work-wrp{padding: 35px 0;}
 	.work-wrp h2{font-size: 24px;margin: 0 auto 20px;}
+	.project-list{gap: 40px;}
+	.project-card{flex-direction: column;gap: 24px;text-align: center;}
+	.project-screenshots{order: -1;}
+	.project-screenshots img{width: 130px;border-radius: 14px;}
+	.project-info h3{font-size: 22px;}
+	.project-subtitle{font-size: 14px;margin-bottom: 16px;}
+	.project-features{text-align: left;}
+	.project-features li{font-size: 14px;line-height: 22px;padding-left: 18px;margin-bottom: 6px;}
+	.project-features li::before{width: 6px;height: 6px;top: 8px;}
+	.project-links{justify-content: center;}
+	.project-links a{font-size: 13px;padding: 6px 16px;}
 	.companies-wrp{margin: 0;padding: 25px 0;}
 	.companies-wrp ul li{width: 50%;}
 
-	.contact-wrp{padding: 45px 0;}
-	.contact-wrp h2{font-size: 26px;margin: 0 auto 15px;}
-	.contact-wrp h6{font-size: 18px;line-height: 26px;margin: 0 auto 20px;}
+	.contact-wrp{padding: 35px 0;}
+	.contact-layout{flex-direction: column;gap: 36px;}
+	.contact-info h2{font-size: 28px;}
+	.contact-lead{font-size: 16px;line-height: 24px;}
+	.contact-desc{font-size: 14px;line-height: 22px;margin-bottom: 24px;}
+	.cnt-frm{max-width: 100%;}
+	.cnt-frm h3{font-size: 20px;}
 
 	footer{padding: 40px 0;}
 	footer h3{font-size: 24px;}

@@ -32,5 +32,26 @@ $(document).ready(function () {
         }
     });
     /* **** sticky **** */
+
+
+    /* **** Lightbox **** */
+    var lightbox = $("#lightbox");
+    var lightboxImg = $("#lightbox-img");
+
+    $(".project-screenshots img").on("click", function () {
+        lightboxImg.attr("src", $(this).attr("src"));
+        lightbox.addClass("active");
+    });
+
+    $(".lightbox-close, #lightbox").on("click", function (e) {
+        if (e.target === this) {
+            lightbox.removeClass("active");
+        }
+    });
+
+    $(document).on("keydown", function (e) {
+        if (e.key === "Escape") lightbox.removeClass("active");
+    });
+    /* **** End Lightbox **** */
     
 });
