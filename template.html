@@ -17,6 +17,19 @@
         <link rel="stylesheet" type="text/css" href="{{base_path}}css/responsive.css" />
 
         <script defer src="https://cloud.umami.is/script.js" data-website-id="1cdd47d3-0108-4e37-94ce-c276c0f3b66d"></script>
+        <script>
+        (function(){
+            var saved=localStorage.getItem("pref_lang");
+            var cur=document.documentElement.lang.split("-")[0];
+            var nav=(navigator.language||"").toLowerCase();
+            var detected=nav.indexOf("it")===0?"it":nav.indexOf("zh")===0?"zh":"en";
+            var target=saved||detected;
+            if(target!==cur){
+                var b="{{base_path}}";
+                window.location.replace(target==="en"?b+"index.html":b+target+"/index.html");
+            }
+        })();
+        </script>
     </head>
     <body>
         <div class="main-wrpper">
