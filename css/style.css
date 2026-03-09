@@ -1,0 +1,571 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+/* ***** Common Css **** */
+:root {
+    scroll-behavior: initial;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
+}
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+}
+img {
+    display: block;
+}
+a {
+    transition: 0.4s linear;
+    -webkit-transition: 0.4s linear;
+    text-decoration: none;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
+    text-decoration: none;
+}
+
+.main-wrpper {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+.container{
+    max-width: 1120px;
+}
+/* ***** End Common Css **** */
+
+/* **** Header **** */
+header {
+    position: fixed;
+    top: 0px;
+    left: 0;
+    right: 0;
+    background: transparent;
+    padding: 20px 0;
+    z-index: 120;
+    transition: 0.4s linear;
+    -webkit-transition: 0.4s linear;
+}
+header .container{
+    max-width: 1350px;
+}
+.navbar .container .navbar-brand,
+.navbar .container-fluid .navbar-brand {
+    margin-left: 0;
+}
+.navbar-brand {
+    float: none;
+    height: auto;
+    padding: 0;
+}
+.navbar-brand h1{
+    margin: 0;
+    font-size: 28px;
+    font-weight: bold;
+    color: #101010;
+}
+.navbar {
+    background: transparent;
+    position: relative;
+    width: 100%;
+    left: 0;
+    top: 0;
+    border: none;
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+    z-index: 120;
+    transition: 0.4s linear;
+    -webkit-transition: 0.4s linear;
+}
+.navbar-light .navbar-nav {
+    margin-left: auto;
+}
+.navbar-light .navbar-nav li {
+    margin-right:30px;
+}
+.navbar-light .navbar-nav li:last-child {
+    margin-right: 0;
+}
+.navbar-light .navbar-nav .nav-link {
+    padding: 8px 0px;
+    color: #101010;
+    font-size: 18px;
+    font-weight: 400;
+    position: relative;
+    transition: 0.4s linear;
+    -webkit-transition: 0.4s linear;
+}
+.navbar-light .navbar-nav .nav-link.nav-btn{
+    padding:8px 30px;
+    border: 2px solid #00B0FF;
+    color: #00B0FF;
+    background: transparent;
+    border-radius: 30px;
+    transition: 0.4s linear;
+    -webkit-transition: 0.4s linear;
+}
+.navbar .navbar-nav li a:focus,
+.navbar .navbar-nav li a:hover,
+.navbar .navbar-nav li a:hover {
+    color: #00B0FF;
+}
+.navbar .navbar-nav .active a,
+.navbar .navbar-nav .active a:focus,
+.navbar .navbar-nav .active a:hover {
+    color: #00B0FF;
+}
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #00B0FF;
+}
+.navbar-light .navbar-nav .nav-link.active.nav-btn,
+.navbar-light .navbar-nav .nav-link.nav-btn:hover{
+    background: #00B0FF;
+    color: #fff;
+}
+/* **** End Header **** */
+
+/* **** toggler **** */
+.navbar-light .navbar-toggler {background-color: transparent;border-radius: 0;outline: none;box-shadow: none;border: none;height: 40px;width: 50px;padding: 0;}
+.navbar-light .navbar-toggler:focus {box-shadow: none;outline: none; }
+.navbar-light .navbar-toggler .navbar-toggler-icon {background-image: unset;}
+.navbar-toggler:active, .navbar-toggler:focus { outline: none; }
+.navbar-light .navbar-toggler-icon {width: 24px;height: 18px;background-image: none;position: relative;border-bottom: 2px solid #000;transition: all 300ms linear;}
+.navbar-light .navbar-toggler-icon:after,
+.navbar-light .navbar-toggler-icon:before {width: 24px;position: absolute;height: 2px;background-color: #000;top: 0;left: 0;content: "";z-index: 2;transition: all 300ms linear;}
+.navbar-light .navbar-toggler-icon:after {top: 8px;}
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {transform: rotate(45deg);}
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {transform: translateY(8px) rotate(-45deg);}
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {border-color: transparent;}
+/* **** End toggler **** */
+
+/* ***** Fix Header **** */
+header.nav-new {
+    background: #fff;
+}
+/* ***** End Fix Header **** */
+
+/* ***** Banner ***** */
+.banner-wrapper{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner-wrapper .container{
+    max-width: 800px;
+}
+.banner-pro-row{
+    display: flex;
+    align-items: center;
+    margin: 0 0 30px;
+}
+.profile-img{
+    min-width: 270px;
+    width: 270px;
+    height: 270px;
+    border-radius: 100%;
+    background: linear-gradient(180deg, rgba(115,203,242,1) 0%,rgba(0,176,255,1) 100%);
+    margin-right: 15px;
+}
+.profile-img img{
+    width: 270px;
+    height: 270px;
+    border-radius: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+.profile-data h1{
+    font-size: 42px;
+    font-weight: bold;
+    color: #101010;
+    line-height: 48px;
+    margin: 0 0 15px;
+}
+.profile-data h1 span{
+    display: block;
+    color: #00B0FF;
+}
+.profile-data p{
+    margin: 0;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 32px;
+    color: #101010;
+}
+.banner-profile h6{
+    font-size: 24px;
+    font-weight: normal;
+    color: #101010;
+    margin: 0 0 60px;
+    line-height: 32px;
+}
+.btn-main{
+    padding: 12px 30px 12px 25px;
+    background: linear-gradient(232.93deg, rgba(0,176,255,1) -0.53%,rgba(82,201,255,1) 91.37%);
+    border-radius: 50px;
+    margin: 0 auto;
+    display: table;
+    font-size: 22px;
+    width: 230px;
+    font-weight: bold;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-main i{
+    margin-right: 20px;
+}
+.btn-main:hover{
+    background:#727e8c;
+    color: #fff;
+}
+/* ***** End Banner ***** */
+
+/* ***** Nice To Meet ****** */
+.nice-meet-wrp{
+    padding: 72px 0 30px;
+    background: linear-gradient(232.93deg, rgba(0,176,255,1) -0.53%,rgba(82,201,255,1) 91.37%);
+    position: relative;
+}
+.nice-meet-wrp h2{
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    margin: 0 auto 25px;
+}
+.nice-meet-wrp h6{
+    font-size: 24px;
+    font-weight: normal;
+    color: #fff;
+    line-height: 32px;
+    max-width: 770px;
+    margin: 0 auto 35px;
+    text-align: center;
+}
+.nice-row{
+    background: #fff;
+    box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.4);
+    border-radius: 24px;
+    border: 1px solid rgba(0, 176, 255, 1);
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+}
+.nice-row .nice-box{
+    display: flex;
+    flex-flow: column;
+    width: 33.33%;
+    border-right: 1px solid #bbb;
+    padding: 70px 20px 35px;
+}
+.nice-row .nice-box:last-child{
+    border-right: none;
+}
+.nice-ic{
+    width: 70px;
+    height: 70px;
+    background: rgba(74,90,107,0.78);
+    border-radius: 100%;
+    margin: 0 auto 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nice-box h3{
+    font-size: 28px;
+    font-weight: bold;
+    color: #4A5A6B;
+    text-align: center;
+    margin: 0 auto 15px;
+}
+.nice-box p{
+    font-size: 16px;
+    font-weight: normal;
+    color: #101010;
+    line-height: 24px;
+    text-align: center;
+    margin: 0 0 25px;
+}
+.nice-data p:last-child{
+    margin: 0;
+}
+.nice-data{
+    min-height: 250px;
+}
+.nice-data h4{
+    font-size: 16px;
+    font-weight: bold;
+    color: #00B0FF;
+    text-align: center;
+    margin: 0 auto 5px;
+}
+.nice-data ul li{
+    text-align: center;
+    font-size: 14px;
+    font-weight: normal;
+    color: #001E00;
+    line-height: 22px;
+}
+
+.up-btn{
+    padding: 10px 25px;
+    border-radius: 30px;
+    background: #6FDA44;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    margin: 0 auto;
+    display: table;
+}
+.up-btn img{
+    display: inline-block;
+    width: 25px;
+    margin-right: 5px;
+}
+.up-btn:hover{
+    background: #101010;
+    color: #fff;
+}
+.fivrebtn{
+    background: #1DBF73;
+}
+.actionbox span{
+    margin: 15px auto;
+    font-size: 18px;
+    font-weight: normal;
+    color: #101010;
+    display: table;
+}
+.actionbox .btn-main{
+    padding: 8px 35px;
+    border: 2px solid #00B0FF;
+    color: #00B0FF;
+    font-size: 18px;
+    font-weight: bold;
+    background: transparent;
+    width: auto;
+    display: table;
+}
+.actionbox .btn-main:hover{
+    background: #00B0FF;
+    color: #fff;
+}
+/* ***** End Nice To Meet ****** */
+
+/* ***** Work ***** */
+.work-wrp{
+    padding: 35px 0 35px;
+    position: relative;
+}
+.work-wrp h2{
+    font-size: 55px;
+    font-weight: bold;
+    color: #4A5A6B;
+    text-align: center;
+    margin: 0 auto 50px;
+}
+.work-wrp .row{
+    margin: 0 -20px;
+}
+.work-wrp .row .col-md-4{
+    padding: 0 20px;
+}
+.work-box{
+    position: relative;
+    margin: 0 0 40px;
+}
+.work-box img{
+    width: 100%;
+    border-radius: 30px;
+}
+.work-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    padding: 45px;
+    background: linear-gradient(232.93deg, rgba(0,176,255,1) -0.53%,rgba(82,201,255,1) 91.37%);
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: .4s linear;
+    -webkit-transition: .4s linear;
+    opacity: 0;
+    visibility: hidden;
+}
+.work-overlay h3{
+    font-size: 18px;
+    font-weight: normal;
+    color: #fff;
+    line-height: 26px;
+    text-align: center;
+    margin: 0 auto 15px;
+}
+.work-overlay a{
+    padding:7px 30px;
+    border-radius: 30px;
+    border: 2px solid #fff;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0 auto;
+    display: table;
+}
+.work-overlay a:hover{
+    background: #fff;
+    color: rgba(0,176,255,1);
+}
+.work-box:hover .work-overlay{
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.companies-wrp{
+    margin: 45px 0 0;
+    padding:  45px 0;
+    border-top: 1px solid #bbb;
+    border-bottom: 1px solid #bbb;
+}
+.companies-wrp h2{
+    font-size: 50px;
+    font-weight: bold;
+    color: #101010;
+    text-align: center;
+    margin: 0 auto 35px;
+}
+.companies-wrp ul{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.companies-wrp ul li{
+    padding: 10px;
+    width: 25%;
+}
+.companies-wrp ul li img{
+    max-width: 100%;
+    width: 100%;
+}
+/* ***** End Work ***** */
+
+/* **** Contact **** */
+.contact-wrp{
+    padding: 75px 0;
+    position: relative;
+}
+.contact-wrp h2{
+    font-size: 50px;
+    font-weight: bold;
+    color: #101010;
+    text-align: center;
+    margin: 0 0 30px;
+}
+.contact-wrp h6{
+    font-size: 24px;
+    font-weight: normal;
+    color: #101010;
+    text-align: center;
+    line-height: 32px;
+    max-width: 760px;
+    margin: 0 auto 45px;
+}
+.cnt-frm{
+    max-width: 490px;
+    margin: 0 auto;
+}
+.cnt-frm .form-group{
+    margin: 0 0 15px;
+}
+.cnt-frm .form-group label{
+    display: block;
+    color: #4A5A6B;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0 0 5px;
+}
+.cnt-frm .form-group .form-control{
+    padding: 10px 15px;
+    border-radius: 12px;
+    border: 2px solid #00B0FF;
+    height: auto;
+    box-shadow: none;
+    color: #111;
+    font-size: 15px;
+    font-weight: 500;
+    resize: none;
+}
+.cnt-frm .form-group textarea.form-control{
+    border-radius: 24px;
+}
+.cnt-frm .btn-main{
+    border: none;
+    font-size: 18px;
+    width: 150px;
+    margin: 15px auto 0;
+}
+.cnt-frm .btn-main i{
+    margin-right: 10px;
+}
+/* **** End Contact **** */
+
+/* ***** Footer ***** */
+footer{
+    padding: 90px 0;
+    background: linear-gradient(232.93deg, rgba(0,176,255,1) -0.53%,rgba(82,201,255,1) 91.37%);
+}
+footer h3{
+    font-size: 32px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    margin: 0 auto 20px;
+}
+footer ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer ul li{
+    margin-right: 10px;
+}
+footer ul li:last-child{
+    margin: 0;
+}
+footer ul li a{
+    width: 45px;
+    height: 45px;
+    display: block;
+    border-radius:50%;
+    border: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer ul li a:hover{
+    background: #101010;
+    border-color: #101010;
+}
+/* ***** End Footer ***** */

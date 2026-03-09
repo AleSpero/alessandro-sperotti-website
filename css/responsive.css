@@ -1,0 +1,96 @@
+@media(min-width:1201px) and (max-width:1600px){
+	
+}
+
+@media(min-width:1025px) and (max-width:1200px){
+	
+}
+
+@media(min-width:992px) and (max-width:1024px){
+	
+}
+
+@media(min-width:768px) and (max-width:991px){
+	.banner-wrapper{height: auto;padding: 150px 0 50px;}
+	.banner-wrapper .container{max-width: 600px;}
+	.profile-img{width: 150px;height: 150px;min-width: 150px;}
+	.profile-img img{width: 150px;height: 150px}
+	.profile-data h1{font-size: 24px;line-height: 30px;}
+	.profile-data p{font-size: 16px;line-height: 24px;}
+	.banner-profile h6{font-size: 16px;line-height: 24px;margin: 0 auto 35px;}
+	.btn-main{font-size: 16px;width: 180px;}
+
+	.nice-meet-wrp{padding: 50px 0;}
+	.nice-meet-wrp h2{font-size: 28px;line-height: 38px;margin: 0 auto 15px;}
+	.nice-meet-wrp h6{font-size: 18px;line-height: 26px;}
+	.nice-row .nice-box{padding: 30px 15px;}
+	.nice-row .nice-box:last-child{border: none;}
+	.nice-box h3{font-size: 22px;}
+	.actionbox .btn-main,.up-btn{font-size: 14px;}
+	.actionbox span{margin: 5px auto;}
+	.nice-box p{font-size: 14px;line-height: 22px;margin: 0 0 10px;}
+	.up-btn img{width: 20px;}
+	.nice-ic{width: 55px;height: 55px;}
+	.nice-ic img{width: 25px;}
+
+	.work-wrp{padding: 45px 0;}
+	.work-wrp h2{font-size:32px;margin: 0 auto 30px;}
+	.companies-wrp{margin: 0;padding: 35px 0;}
+	.companies-wrp ul li{width: 25%;}
+	.work-box img{border-radius: 15px;}
+	.work-overlay{padding: 15px;}
+	.work-overlay h3{font-size: 14px;line-height: 22px;}
+	.work-overlay a{padding: 5px 20px;font-size: 12px;}
+	.work-wrp .row{margin: 0 -10px;}
+	.work-wrp .row .col-md-4{padding:0 10px;}
+
+	.contact-wrp{padding: 45px 0;}
+	.contact-wrp h2{font-size: 32px;margin: 0 auto 15px;}
+	.contact-wrp h6{font-size: 18px;line-height: 26px;margin: 0 auto 30px;}
+
+	footer{padding: 40px 0;}
+	footer h3{font-size: 24px;}
+}
+
+@media(min-width:576px) and (max-width:767px){
+	
+}
+
+@media(min-width:448px) and (max-width:575px){
+	
+}
+
+@media(max-width:767px){
+	.navbar-brand h1{font-size: 22px;}
+	.navbar-light .navbar-nav{padding: 15px;}
+	.navbar-light .navbar-nav li{margin: 0;}
+	.navbar-light .navbar-nav .nav-link{text-align: center;}
+
+	.banner-wrapper{height: auto;padding: 100px 0 50px;}
+	.banner-pro-row{flex-flow: column;}
+	.profile-img{width: 230px;height: 230px;margin: 0 auto 35px;min-width: 230px;}
+	.profile-img img{width: 230px;height: 230px}
+	.profile-data h1{font-size: 28px;text-align: center;line-height: 34px;}
+	.profile-data p{font-size: 18px;text-align: center;line-height: 26px;}
+	.banner-profile h6{font-size: 16px;text-align: center;line-height: 24px;margin: 0 auto 35px;}
+	.btn-main{font-size: 16px;width: 180px;}
+
+	.nice-meet-wrp{padding: 50px 0;}
+	.nice-meet-wrp h2{font-size: 28px;line-height: 38px;margin: 0 auto 15px;}
+	.nice-meet-wrp h6{font-size: 18px;line-height: 26px;}
+	.nice-row .nice-box{width: 100%;padding: 40px 15px;border: none;border-bottom: 1px solid #bbb;}
+	.nice-row .nice-box:last-child{border: none;}
+	.nice-box h3{font-size: 24px;}
+
+	.work-wrp{padding: 45px 0;}
+	.work-wrp h2{font-size: 24px;margin: 0 auto 20px;}
+	.companies-wrp{margin: 0;padding: 25px 0;}
+	.companies-wrp ul li{width: 50%;}
+
+	.contact-wrp{padding: 45px 0;}
+	.contact-wrp h2{font-size: 26px;margin: 0 auto 15px;}
+	.contact-wrp h6{font-size: 18px;line-height: 26px;margin: 0 auto 20px;}
+
+	footer{padding: 40px 0;}
+	footer h3{font-size: 24px;}
+}
