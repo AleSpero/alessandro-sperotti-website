@@ -1,0 +1,81 @@
+{
+  "nav_work": "Selected Work",
+  "nav_contact": "Contact",
+
+  "banner_title": "Your app idea <span>deserves to succeed.</span>",
+  "banner_subtitle": "Mobile developer since 2017. I turn ideas into polished, high-performing Android &amp; iOS apps&mdash;or improve the ones you already have.",
+  "stat_years_value": "8+",
+  "stat_years_label": "Years of Experience",
+  "stat_downloads_value": "15+",
+  "stat_downloads_label": "Apps Shipped",
+  "stat_rating_value": "100%",
+  "stat_rating_label": "Repeat Clients",
+  "banner_desc": "From new apps built from scratch, to bug fixing and taking over existing projects&mdash;across e-learning, fintech, healthcare, news and more.",
+  "cta_talk": "Let's Talk",
+
+  "meet_title": "Nice to meet you! <br>I'm Alessandro.",
+  "meet_subtitle": "I help businesses and startups bring their app ideas to life&mdash;or make existing apps better. Whether you need a brand-new mobile app, improvements to an existing product, or expert advice on your mobile strategy, I've got you covered.",
+  "service1_title": "Build Your App",
+  "service1_desc": "Turn your idea into a polished Android and iOS app, from design to launch.",
+  "service2_title": "Improve Your App",
+  "service2_desc": "Take over an existing codebase, add features, boost performance and ratings.",
+  "service3_title": "Fix &amp; Maintain",
+  "service3_desc": "Squash bugs, ship updates, and keep your app running smoothly.",
+  "service4_title": "Strategy &amp; Consulting",
+  "service4_desc": "Get expert advice on architecture, app store publishing, and growth.",
+  "tech_label": "Technologies I Work With",
+
+  "work_title": "Selected Work",
+
+  "mf_subtitle": "Financial News &middot; Android / iOS",
+  "mf_feature1": "Companion app for Milano Finanza web platform",
+  "mf_feature2": "Users can consume news, video articles, podcasts, financial data and more",
+  "mf_feature3": "Features include app-wide PiP, ad management including video ads, real time notifications",
+
+  "qa_subtitle": "E-Learning &middot; Android / iOS",
+  "qa_feature1": "Video courses, webinars, quizzes and exams for a large content catalog",
+  "qa_feature2": "Shipped features: reworked download system, interactive quizzes, home widget",
+  "qa_feature3": "Increased MAU by 117%, daily downloads by 150%, review score from 3.5 to 4.5 over 6 months",
+
+  "emid_subtitle": "Health &middot; Android / iOS",
+  "emid_feature1": "Two distinct apps: one for health data, one for first-aid personnel",
+  "emid_feature2": "Uses face recognition technology for patient identification in first-aid scenarios",
+  "emid_feature3": "Built with KMP for a shared core layer across iOS and Android",
+
+  "wclock_subtitle": "Utility &middot; Android / iOS",
+  "wclock_feature1": "Simple, lightweight app to check local time, weather, and attractions worldwide",
+  "wclock_feature2": "Personal project, first Android-only then rewritten in Flutter for iOS",
+  "wclock_feature3": "300k+ total downloads, 2k daily users, average rating of 4.6/5",
+
+  "lac_subtitle": "News &middot; Android / iOS",
+  "lac_feature1": "Support for LacNews24 news platform",
+  "lac_feature2": "App-wide PiP, videos and video ads, TikTok-style video view",
+  "lac_feature3": "Real-time notifications and podcast support",
+
+  "klearn_subtitle": "Language Learning &middot; Android",
+  "klearn_feature1": "An exciting way to learn Chinese with karaoke-style lessons",
+  "klearn_feature2": "Built from scratch using state-of-the-art frameworks and technologies",
+  "klearn_feature3": "Gamification with leaderboards, level system and rewards to boost engagement",
+
+  "avq_subtitle": "Conversational Banking &middot; Android / iOS",
+  "avq_feature1": "Innovative banking app connecting relationship managers with bank clients",
+  "avq_feature2": "Features AI NLP-based chat suggestions and integration with social apps (WhatsApp, WeChat, etc.)",
+  "avq_feature3": "Both versions leverage latest UI frameworks (SwiftUI, Jetpack Compose)",
+
+  "trusted_title": "Trusted By",
+
+  "contact_title": "Let's Talk",
+  "contact_lead": "Get in touch to start a conversation about your project. You can expect a response within 1-2 business days.",
+  "contact_desc": "Use the contact form to send me a message, or reach out directly via email. If you'd prefer a live conversation, book a video call at your convenience.",
+  "contact_calendly": "Schedule a video call",
+  "contact_linkedin": "Connect on LinkedIn",
+  "form_title": "Contact Form",
+  "form_name": "Name",
+  "form_email": "Email Address",
+  "form_message": "Your Message",
+  "form_submit": "Submit",
+  "form_success": "Message sent! I'll get back to you shortly.",
+  "form_error": "Something went wrong. Please try again or email me directly.",
+
+  "lightbox_close": "Close preview"
+}

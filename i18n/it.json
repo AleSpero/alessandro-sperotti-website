@@ -1,0 +1,81 @@
+{
+  "nav_work": "Lavori",
+  "nav_contact": "Contatti",
+
+  "banner_title": "La tua idea di app <span>merita di avere successo.</span>",
+  "banner_subtitle": "Sviluppatore mobile dal 2017. Trasformo idee in app Android e iOS performanti e curate&mdash;o miglioro quelle che hai gi&agrave;.",
+  "stat_years_value": "8+",
+  "stat_years_label": "Anni di Esperienza",
+  "stat_downloads_value": "15+",
+  "stat_downloads_label": "App Rilasciate",
+  "stat_rating_value": "100%",
+  "stat_rating_label": "Clienti Fidelizzati",
+  "banner_desc": "Dallo sviluppo di app da zero, alla correzione di bug e al subentro su progetti esistenti&mdash;in e-learning, fintech, sanit&agrave;, news e altro.",
+  "cta_talk": "Parliamone",
+
+  "meet_title": "Piacere di conoscerti! <br>Sono Alessandro.",
+  "meet_subtitle": "Aiuto aziende e startup a realizzare le loro idee di app&mdash;o a migliorare quelle esistenti. Che tu abbia bisogno di una nuova app mobile, di miglioramenti a un prodotto esistente o di consulenza sulla tua strategia mobile, posso aiutarti.",
+  "service1_title": "Sviluppo App",
+  "service1_desc": "Trasformo la tua idea in un'app Android e iOS curata, dal design al lancio.",
+  "service2_title": "Migliora la Tua App",
+  "service2_desc": "Prendo in carico un progetto esistente, aggiungo funzionalit&agrave;, miglioro performance e recensioni.",
+  "service3_title": "Correzione &amp; Manutenzione",
+  "service3_desc": "Risolvo bug, rilascio aggiornamenti e mantengo la tua app sempre operativa.",
+  "service4_title": "Strategia &amp; Consulenza",
+  "service4_desc": "Consulenza esperta su architettura, pubblicazione sugli store e crescita.",
+  "tech_label": "Tecnologie con cui Lavoro",
+
+  "work_title": "Lavori Selezionati",
+
+  "mf_subtitle": "Notizie Finanziarie &middot; Android / iOS",
+  "mf_feature1": "App companion per la piattaforma web di Milano Finanza",
+  "mf_feature2": "Gli utenti possono fruire di notizie, video articoli, podcast, dati finanziari e altro",
+  "mf_feature3": "Include PiP a livello di app, gestione pubblicit&agrave; con video ads, notifiche in tempo reale",
+
+  "qa_subtitle": "E-Learning &middot; Android / iOS",
+  "qa_feature1": "Corsi video, webinar, quiz ed esami per un ampio catalogo di contenuti",
+  "qa_feature2": "Funzionalit&agrave; rilasciate: sistema download rinnovato, quiz interattivi, widget home",
+  "qa_feature3": "MAU aumentati del 117%, download giornalieri del 150%, valutazione da 3.5 a 4.5 in 6 mesi",
+
+  "emid_subtitle": "Sanit&agrave; &middot; Android / iOS",
+  "emid_feature1": "Due app distinte: una per i dati sanitari, una per il personale di primo soccorso",
+  "emid_feature2": "Usa tecnologia di riconoscimento facciale per l'identificazione dei pazienti in scenari di pronto soccorso",
+  "emid_feature3": "Sviluppata con KMP per un livello core condiviso tra iOS e Android",
+
+  "wclock_subtitle": "Utilit&agrave; &middot; Android / iOS",
+  "wclock_feature1": "App semplice e leggera per controllare ora locale, meteo e attrazioni nel mondo",
+  "wclock_feature2": "Progetto personale, prima solo Android poi riscritto in Flutter per iOS",
+  "wclock_feature3": "300k+ download totali, 2k utenti giornalieri, valutazione media di 4.6/5",
+
+  "lac_subtitle": "News &middot; Android / iOS",
+  "lac_feature1": "Supporto per la piattaforma di notizie LacNews24",
+  "lac_feature2": "PiP a livello di app, video e video ads, visualizzazione video stile TikTok",
+  "lac_feature3": "Notifiche in tempo reale e supporto podcast",
+
+  "klearn_subtitle": "Apprendimento Lingue &middot; Android",
+  "klearn_feature1": "Un modo divertente per imparare il cinese con lezioni in stile karaoke",
+  "klearn_feature2": "Sviluppata da zero usando framework e tecnologie all'avanguardia",
+  "klearn_feature3": "Gamification con classifiche, sistema a livelli e ricompense per aumentare l'engagement",
+
+  "avq_subtitle": "Banking Conversazionale &middot; Android / iOS",
+  "avq_feature1": "App bancaria innovativa che collega relationship manager e clienti",
+  "avq_feature2": "Suggerimenti chat basati su AI NLP e integrazione con app social (WhatsApp, WeChat, ecc.)",
+  "avq_feature3": "Entrambe le versioni sfruttano i pi&ugrave; recenti framework UI (SwiftUI, Jetpack Compose)",
+
+  "trusted_title": "Hanno Scelto Me",
+
+  "contact_title": "Parliamone",
+  "contact_lead": "Contattami per iniziare una conversazione sul tuo progetto. Puoi aspettarti una risposta entro 1-2 giorni lavorativi.",
+  "contact_desc": "Usa il modulo di contatto per inviarmi un messaggio, oppure contattami direttamente via email. Se preferisci una conversazione dal vivo, prenota una videochiamata quando vuoi.",
+  "contact_calendly": "Prenota una videochiamata",
+  "contact_linkedin": "Collegati su LinkedIn",
+  "form_title": "Modulo di Contatto",
+  "form_name": "Nome",
+  "form_email": "Indirizzo Email",
+  "form_message": "Il Tuo Messaggio",
+  "form_submit": "Invia",
+  "form_success": "Messaggio inviato! Ti risponder&ograve; al pi&ugrave; presto.",
+  "form_error": "Qualcosa &egrave; andato storto. Riprova o scrivimi direttamente via email.",
+
+  "lightbox_close": "Chiudi anteprima"
+}

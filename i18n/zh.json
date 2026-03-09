@@ -1,0 +1,81 @@
+{
+  "nav_work": "精选作品",
+  "nav_contact": "联系我",
+
+  "banner_title": "您的应用创意<span>值得成功。</span>",
+  "banner_subtitle": "2017年起从事移动开发。我将创意转化为精致、高性能的 Android 和 iOS 应用&mdash;或优化您现有的产品。",
+  "stat_years_value": "8+",
+  "stat_years_label": "年开发经验",
+  "stat_downloads_value": "15+",
+  "stat_downloads_label": "已发布应用",
+  "stat_rating_value": "100%",
+  "stat_rating_label": "回头客户",
+  "banner_desc": "从零开始开发新应用，到修复 bug、接手现有项目&mdash;涵盖在线教育、金融科技、医疗健康、新闻资讯等多个领域。",
+  "cta_talk": "联系我",
+
+  "meet_title": "很高兴认识你！<br>我是 Alessandro。",
+  "meet_subtitle": "我帮助企业和初创公司将应用创意变为现实&mdash;或改进现有应用。无论您需要全新的移动应用、现有产品的改进，还是移动战略方面的专业建议，我都能为您提供帮助。",
+  "service1_title": "开发您的应用",
+  "service1_desc": "将您的想法转化为精致的 Android 和 iOS 应用，从设计到上线。",
+  "service2_title": "改进您的应用",
+  "service2_desc": "接手现有代码库，添加功能，提升性能和评分。",
+  "service3_title": "修复与维护",
+  "service3_desc": "修复 bug，发布更新，保持应用稳定运行。",
+  "service4_title": "战略与咨询",
+  "service4_desc": "提供架构设计、应用商店发布和增长方面的专业建议。",
+  "tech_label": "我使用的技术",
+
+  "work_title": "精选作品",
+
+  "mf_subtitle": "财经新闻 &middot; Android / iOS",
+  "mf_feature1": "Milano Finanza 网络平台的配套应用",
+  "mf_feature2": "用户可以浏览新闻、视频文章、播客、金融数据等内容",
+  "mf_feature3": "功能包括全局画中画、广告管理（含视频广告）、实时通知",
+
+  "qa_subtitle": "在线教育 &middot; Android / iOS",
+  "qa_feature1": "视频课程、网络研讨会、测验和考试，拥有丰富的内容目录",
+  "qa_feature2": "已发布功能：全新下载系统、互动测验、主屏幕小组件",
+  "qa_feature3": "6个月内月活用户增长117%，日下载量增长150%，评分从3.5提升至4.5",
+
+  "emid_subtitle": "医疗健康 &middot; Android / iOS",
+  "emid_feature1": "两款独立应用：一款用于健康数据，一款用于急救人员",
+  "emid_feature2": "使用人脸识别技术在急救场景中识别患者身份",
+  "emid_feature3": "使用 KMP 构建跨 iOS 和 Android 的共享核心层",
+
+  "wclock_subtitle": "实用工具 &middot; Android / iOS",
+  "wclock_feature1": "简洁轻量的应用，查看全球各地的当地时间、天气和景点",
+  "wclock_feature2": "个人项目，最初仅支持 Android，后用 Flutter 重写以支持 iOS",
+  "wclock_feature3": "总下载量超过30万，日活用户2千，平均评分4.6/5",
+
+  "lac_subtitle": "新闻资讯 &middot; Android / iOS",
+  "lac_feature1": "LacNews24 新闻平台的支持应用",
+  "lac_feature2": "全局画中画、视频和视频广告、TikTok 风格的视频浏览",
+  "lac_feature3": "实时通知和播客支持",
+
+  "klearn_subtitle": "语言学习 &middot; Android",
+  "klearn_feature1": "通过卡拉 OK 风格的课程学习中文的有趣方式",
+  "klearn_feature2": "使用最先进的框架和技术从零开始构建",
+  "klearn_feature3": "通过排行榜、等级系统和奖励的游戏化设计提升参与度",
+
+  "avq_subtitle": "对话式银行 &middot; Android / iOS",
+  "avq_feature1": "创新的银行应用，连接客户经理与银行客户",
+  "avq_feature2": "基于 AI NLP 的聊天建议功能，集成社交应用（WhatsApp、微信等）",
+  "avq_feature3": "两个版本均采用最新 UI 框架（SwiftUI、Jetpack Compose）",
+
+  "trusted_title": "合作伙伴",
+
+  "contact_title": "联系我",
+  "contact_lead": "欢迎与我联系，探讨您的项目。我会在1-2个工作日内回复。",
+  "contact_desc": "通过联系表单给我留言，或直接发送邮件。如果您希望面对面交流，可以随时预约视频通话。",
+  "contact_calendly": "预约视频通话",
+  "contact_linkedin": "在 LinkedIn 上联系",
+  "form_title": "联系表单",
+  "form_name": "姓名",
+  "form_email": "电子邮箱",
+  "form_message": "您的留言",
+  "form_submit": "提交",
+  "form_success": "消息已发送！我会尽快回复您。",
+  "form_error": "发送失败，请重试或直接发送邮件联系我。",
+
+  "lightbox_close": "关闭预览"
+}

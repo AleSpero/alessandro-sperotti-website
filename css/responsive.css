@@ -64,6 +64,7 @@
 	.navbar-light .navbar-nav{padding: 15px;}
 	.navbar-light .navbar-nav li{margin: 0;}
 	.navbar-light .navbar-nav .nav-link{text-align: center;}
+	.lang-switcher{margin: 10px auto 0;}
 
 	.banner-wrapper{height: auto;padding: 100px 0 50px;}
 	.banner-pro-row{flex-flow: column;}
