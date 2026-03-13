@@ -8,9 +8,9 @@ import re
 SITE_URL = "https://alessandrosperotti.com"
 
 LANGUAGES = {
-    "en": {"lang_attr": "en",      "output": "index.html",    "base_path": ""},
-    "it": {"lang_attr": "it",      "output": "it/index.html", "base_path": "../"},
-    "zh": {"lang_attr": "zh-Hans", "output": "zh/index.html", "base_path": "../"},
+    "en": {"lang_attr": "en",      "output": "index.html",    "base_path": "", "og_locale": "en_US", "canonical": f"{SITE_URL}/"},
+    "it": {"lang_attr": "it",      "output": "it/index.html", "base_path": "../", "og_locale": "it_IT", "canonical": f"{SITE_URL}/it/"},
+    "zh": {"lang_attr": "zh-Hans", "output": "zh/index.html", "base_path": "../", "og_locale": "zh_CN", "canonical": f"{SITE_URL}/zh/"},
 }
 
 LANG_LABELS = {"en": "EN", "it": "IT", "zh": "中文"}
@@ -57,6 +57,8 @@ def build_page(template, translations, lang_code):
     html = html.replace("{{base_path}}", cfg["base_path"])
     html = html.replace("{{hreflang_tags}}", hreflang)
     html = html.replace("{{lang_switcher}}", switcher)
+    html = html.replace("{{canonical_url}}", cfg["canonical"])
+    html = html.replace("{{og_locale}}", cfg["og_locale"])
 
     for key, value in translations.items():
         html = html.replace("{{" + key + "}}", value)

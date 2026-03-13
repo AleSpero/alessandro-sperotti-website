@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://alessandrosperotti.com/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alessandrosperotti.com/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://alessandrosperotti.com/it/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://alessandrosperotti.com/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alessandrosperotti.com/" />
+    <lastmod>2026-03-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://alessandrosperotti.com/it/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alessandrosperotti.com/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://alessandrosperotti.com/it/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://alessandrosperotti.com/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alessandrosperotti.com/" />
+    <lastmod>2026-03-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://alessandrosperotti.com/zh/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alessandrosperotti.com/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://alessandrosperotti.com/it/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://alessandrosperotti.com/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alessandrosperotti.com/" />
+    <lastmod>2026-03-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+</urlset>

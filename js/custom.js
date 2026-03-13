@@ -33,7 +33,7 @@ $(document).ready(function () {
     });
     $(".lang-dropdown a").on("click", function () {
         var href = $(this).attr("href");
-        var lang = href.indexOf("/it/") !== -1 ? "it" : href.indexOf("/zh/") !== -1 ? "zh" : "en";
+        var lang = href.indexOf("it/") !== -1 ? "it" : href.indexOf("zh/") !== -1 ? "zh" : "en";
         localStorage.setItem("pref_lang", lang);
     });
     /* **** End Language Switcher **** */

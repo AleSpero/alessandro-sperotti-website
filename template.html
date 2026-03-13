@@ -1,13 +1,70 @@
 <!DOCTYPE html>
 <html lang="{{lang}}">
     <head>
-        <!-- Meta tag -->
+        <!-- Meta -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{{meta_title}}</title>
+        <meta name="description" content="{{meta_description}}">
+        <meta name="author" content="Alessandro Sperotti">
+        <link rel="canonical" href="{{canonical_url}}" />
         {{hreflang_tags}}
-        <!-- Favicon & Title -->
+
+        <!-- Open Graph -->
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="{{og_title}}">
+        <meta property="og:description" content="{{og_description}}">
+        <meta property="og:url" content="{{canonical_url}}">
+        <meta property="og:image" content="https://alessandrosperotti.com/images/og-image.png">
+        <meta property="og:site_name" content="Alessandro Sperotti">
+        <meta property="og:locale" content="{{og_locale}}">
+
+        <!-- Twitter Card -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="{{og_title}}">
+        <meta name="twitter:description" content="{{og_description}}">
+        <meta name="twitter:image" content="https://alessandrosperotti.com/images/og-image.png">
+
+        <!-- JSON-LD Structured Data -->
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "ProfessionalService",
+            "name": "Alessandro Sperotti",
+            "url": "https://alessandrosperotti.com",
+            "image": "https://alessandrosperotti.com/images/user-img.png",
+            "description": "{{meta_description}}",
+            "priceRange": "$$",
+            "telephone": "",
+            "email": "alessandro@sperodevs.com",
+            "address": {
+                "@type": "PostalAddress",
+                "addressCountry": "IT"
+            },
+            "sameAs": [
+                "https://www.linkedin.com/in/alessandro-sperotti-89b847141/",
+                "https://github.com/AleSpero",
+                "https://www.fiverr.com/alespero_dev",
+                "https://www.upwork.com/freelancers/alespero"
+            ],
+            "founder": {
+                "@type": "Person",
+                "name": "Alessandro Sperotti",
+                "jobTitle": "Freelance Mobile App Developer",
+                "url": "https://alessandrosperotti.com"
+            },
+            "knowsAbout": ["Android", "iOS", "Kotlin", "Swift", "Flutter", "React Native", "Jetpack Compose", "SwiftUI", "Kotlin Multiplatform"],
+            "areaServed": {
+                "@type": "GeoCircle",
+                "geoMidpoint": { "@type": "GeoCoordinates", "latitude": 45.46, "longitude": 9.19 },
+                "geoRadius": "50000"
+            },
+            "serviceType": ["Mobile App Development", "Android Development", "iOS Development", "App Consulting"]
+        }
+        </script>
+
+        <!-- Favicon -->
         <link rel="icon" type="image/png" sizes="16x16" href="{{base_path}}images/favicon.png" />
-        <title>Alessandro Sperotti</title>
 
         <!-- CSS only -->
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
