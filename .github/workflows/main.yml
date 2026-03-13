@@ -13,4 +13,4 @@ jobs:
       with:
         server: ftp.alessandrosperotti.com
         username: 7980329@aruba.it
-        password: ${{ secrets.ftp_password }}
+        password: ${{ secrets.FTP_PASSWORD }}
