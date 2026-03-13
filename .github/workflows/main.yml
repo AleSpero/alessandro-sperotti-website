@@ -11,6 +11,6 @@ jobs:
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.6
       with:
-        server: ftp.alessandrosperotti.com
+        server: ciao
         username: 7980329@aruba.it
         password: ${{ secrets.FTP_PASSWORD }}
