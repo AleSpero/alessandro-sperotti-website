@@ -73,6 +73,7 @@
         <link rel="stylesheet" type="text/css" href="{{base_path}}css/style.css" />
         <link rel="stylesheet" type="text/css" href="{{base_path}}css/responsive.css" />
 
+        <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
         <script defer src="https://cloud.umami.is/script.js" data-website-id="1cdd47d3-0108-4e37-94ce-c276c0f3b66d"></script>
         <script>
         (function(){
@@ -372,9 +373,9 @@
                                 <li>
                                     <a href="https://www.ilsole24ore.com" target="_blank"><img src="{{base_path}}images/logo-sole24ore.png" alt="Il Sole 24 Ore"></a>
                                 </li>
-                                <li>
+                                <!-- <li>
                                     <a href="https://www.cutowl.com" target="_blank"><img src="{{base_path}}images/logo-cutowl.png" alt="CutOwl Digital Stuff"></a>
-                                </li>
+                                </li> -->
                                 <li>
                                     <a href="https://www.dsgroup.com" target="_blank"><img src="{{base_path}}images/com-lg4.png" alt="DS Group"></a>
                                 </li>
@@ -427,6 +428,7 @@
                                     <label>{{form_message}}</label>
                                     <textarea class="form-control" name="message" rows="6" required></textarea>
                                 </div>
+                                <div class="cf-turnstile" data-sitekey="0x4AAAAAAC1qEOO37QLze-3C" data-theme="light"></div>
                                 <button type="submit" class="btn-main"><i class="far fa-envelope fa-fw"></i> {{form_submit}}</button>
                                 <div id="form-feedback" class="form-feedback" style="display:none;"
                                      data-success="{{form_success}}" data-error="{{form_error}}"></div>
