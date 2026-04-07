@@ -325,6 +325,27 @@ header.nav-new {
     background:#727e8c;
     color: #fff;
 }
+/* Hero CTA Group */
+.hero-cta-group {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+.hero-cta-group .btn-main {
+    width: auto;
+    white-space: nowrap;
+}
+.btn-outline {
+    background: transparent !important;
+    border: 2px solid #00b0ff !important;
+    color: #00b0ff !important;
+}
+.btn-outline:hover {
+    background: #00b0ff !important;
+    color: #fff !important;
+}
 /* ***** End Banner ***** */
 
 /* ***** Nice To Meet ****** */
@@ -762,6 +783,47 @@ header.nav-new {
 .form-error{
     background: #fdecea;
     color: #b3261e;
+}
+/* Calendly big button & separator */
+.calendly-intro {
+    font-size: 16px;
+    color: #4A5A6B;
+    margin: 0 0 16px;
+    line-height: 24px;
+}
+.btn-calendly-big,
+.cnt-frm .btn-calendly-big {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 0 20px;
+    padding: 16px 24px;
+    font-size: 18px;
+    border-radius: 16px;
+    display: block;
+    text-align: center;
+    line-height: 1.5;
+}
+.btn-calendly-big i {
+    margin-right: 6px;
+}
+.calendly-badge {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 8px;
+    background: rgba(255, 255, 255, 0.25);
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 4px 12px;
+    border-radius: 20px;
+    letter-spacing: 0.3px;
+}
+.contact-or {
+    text-align: center;
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 24px;
+    max-width: 380px;
 }
 /* **** End Contact **** */
 
