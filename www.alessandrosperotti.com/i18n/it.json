@@ -2,32 +2,32 @@
   "meta_title": "Alessandro Sperotti | Sviluppatore App Mobile Freelance &mdash; Android &amp; iOS",
   "meta_description": "Sviluppatore mobile freelance con oltre 8 anni di esperienza. Creo app Android e iOS performanti per startup e aziende. Kotlin, Swift, Flutter, React Native.",
   "og_title": "Alessandro Sperotti &mdash; Sviluppatore App Mobile Freelance",
-  "og_description": "Aiuto startup e aziende a crescere con app mobile curate e performanti. 8+ anni di esperienza, 15+ app rilasciate, clienti fidelizzati.",
+  "og_description": "Aiuto startup e aziende a crescere con app mobile curate e performanti. 8+ anni di esperienza, 15+ app rilasciate, clienti soddisfatti.",
 
   "nav_work": "Lavori",
   "nav_contact": "Contatti",
 
   "banner_title": "La tua idea di app <span>merita di avere successo.</span>",
-  "banner_subtitle": "Sviluppatore mobile dal 2017. Trasformo idee in app Android e iOS performanti e curate&mdash;o miglioro quelle che hai gi&agrave;.",
+  "banner_subtitle": "Sviluppatore mobile dal 2017. Trasformo idee di business in app Android e iOS curate e di alta qualità.",
   "stat_years_value": "8+",
   "stat_years_label": "Anni di Esperienza",
   "stat_downloads_value": "15+",
   "stat_downloads_label": "App Rilasciate",
   "stat_rating_value": "100%",
-  "stat_rating_label": "Clienti Fidelizzati",
+  "stat_rating_label": "Clienti Soddisfatti",
   "banner_desc": "Dallo sviluppo di app da zero, alla correzione di bug e al subentro su progetti esistenti&mdash;in e-learning, fintech, sanit&agrave;, news e altro.",
-  "cta_talk": "Parliamone",
+  "cta_talk": "Contatti",
 
   "meet_title": "Piacere di conoscerti! <br>Sono Alessandro.",
-  "meet_subtitle": "Aiuto aziende e startup a realizzare le loro idee di app&mdash;o a migliorare quelle esistenti. Che tu abbia bisogno di una nuova app mobile, di miglioramenti a un prodotto esistente o di consulenza sulla tua strategia mobile, posso aiutarti.",
+  "meet_subtitle": "Aiuto i miei clienti a realizzare le loro idee di app&mdash;o a migliorare quelle esistenti. che ci sia bisogno di una nuova app mobile, di miglioramenti a un prodotto esistente o di consulenza sulla strategia mobile, posso aiutare.",
   "service1_title": "Sviluppo App",
-  "service1_desc": "Trasformo la tua idea in un'app Android e iOS curata, dal design al lancio.",
+  "service1_desc": "Trasformo la tua idea in un'app Android e iOS curata, passando dalla fase di progettazione a quella di design ed infine testing e pubblicazione, fornendo servizi aggiuntivi per il mantenimento post-rilascio.",
   "service2_title": "Migliora la Tua App",
-  "service2_desc": "Prendo in carico un progetto esistente, aggiungo funzionalit&agrave;, miglioro performance e recensioni.",
+  "service2_desc": "Presa in carico di un progetto esistente, aggiunta di nuove funzionalit&agrave, o miglioramento di performance, KPIs e recensioni.",
   "service3_title": "Correzione &amp; Manutenzione",
-  "service3_desc": "Risolvo bug, rilascio aggiornamenti e mantengo la tua app sempre operativa.",
+  "service3_desc": "Bug fixing, aggiornamento librerie e codice, in modo da mantenere il tuo progetto sempre al passo con i tempi.",
   "service4_title": "Strategia &amp; Consulenza",
-  "service4_desc": "Consulenza esperta su architettura, pubblicazione sugli store e crescita.",
+  "service4_desc": "Consulenza su impostazione progetto, domande tecniche su sviluppo mobile, pubblicazione sugli store e crescita.",
   "tech_label": "Tecnologie con cui Lavoro",
 
   "work_title": "Lavori Selezionati",
@@ -67,9 +67,9 @@
   "avq_feature2": "Suggerimenti chat basati su AI NLP e integrazione con app social (WhatsApp, WeChat, ecc.)",
   "avq_feature3": "Entrambe le versioni sfruttano i pi&ugrave; recenti framework UI (SwiftUI, Jetpack Compose)",
 
-  "trusted_title": "Hanno Scelto Me",
+  "trusted_title": "Tra i miei clienti",
 
-  "contact_title": "Parliamone",
+  "contact_title": "Contatti",
   "contact_lead": "Contattami per iniziare una conversazione sul tuo progetto. Puoi aspettarti una risposta entro 1-2 giorni lavorativi.",
   "contact_desc": "Usa il modulo di contatto per inviarmi un messaggio, oppure contattami direttamente via email. Se preferisci una conversazione dal vivo, prenota una videochiamata quando vuoi.",
   "contact_calendly": "Prenota una videochiamata",
@@ -81,6 +81,5 @@
   "form_submit": "Invia",
   "form_success": "Messaggio inviato! Ti risponder&ograve; al pi&ugrave; presto.",
   "form_error": "Qualcosa &egrave; andato storto. Riprova o scrivimi direttamente via email.",
-
   "lightbox_close": "Chiudi anteprima"
 }

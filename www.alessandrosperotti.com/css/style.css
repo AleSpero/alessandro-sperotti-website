@@ -747,6 +747,9 @@ header.nav-new {
     opacity: 0.7;
     cursor: not-allowed;
 }
+.cf-turnstile{
+    margin: 18px 0 8px;
+}
 .form-feedback{
     margin-top: 16px;
     padding: 12px 16px;

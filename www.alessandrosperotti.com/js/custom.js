@@ -103,6 +103,7 @@ $(document).ready(function () {
                     $feedback.text($feedback.data("success"))
                              .addClass("form-success").fadeIn();
                     $form[0].reset();
+                    if (typeof turnstile !== "undefined") turnstile.reset();
                 } else {
                     console.warn("[ContactForm] Server returned success=false, reason:", res && res.reason);
                     $feedback.text($feedback.data("error"))
