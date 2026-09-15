@@ -334,8 +334,9 @@ header.nav-new {
     margin: 0 auto;
 }
 .hero-cta-group .btn-main {
-    width: auto;
+    width: auto !important;
     white-space: nowrap;
+    margin: 0 !important;
 }
 .btn-outline {
     background: transparent !important;
@@ -659,6 +660,105 @@ header.nav-new {
     transform: scale(1.1);
 }
 /* ***** End Work ***** */
+
+/* ***** FAQ ***** */
+.faq-wrp{
+    padding: 20px 0 60px;
+    position: relative;
+}
+.faq-wrp h2{
+    font-size: 55px;
+    font-weight: bold;
+    color: #4A5A6B;
+    text-align: center;
+    margin: 0 auto 50px;
+}
+.faq-list{
+    max-width: 880px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.faq-item{
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 14px;
+    overflow: hidden;
+    transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+.faq-item:hover{
+    border-color: #b8e4ff;
+}
+.faq-item.open{
+    border-color: #00B0FF;
+    box-shadow: 0 6px 24px rgba(0, 176, 255, 0.10);
+}
+.faq-question{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+    padding: 22px 26px;
+    background: none;
+    border: 0;
+    text-align: left;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 19px;
+    font-weight: bold;
+    line-height: 28px;
+    color: #101010;
+    transition: color 0.25s ease;
+}
+.faq-question:hover,
+.faq-item.open .faq-question{
+    color: #00B0FF;
+}
+.faq-question:focus-visible{
+    outline: 2px solid #00B0FF;
+    outline-offset: -2px;
+}
+.faq-icon{
+    flex-shrink: 0;
+    font-size: 15px;
+    color: #00B0FF;
+    transition: transform 0.3s ease;
+}
+.faq-item.open .faq-icon{
+    transform: rotate(180deg);
+}
+.faq-answer{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease;
+}
+.faq-answer-inner{
+    padding: 0 26px 24px;
+    white-space: pre-line;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+    color: #4A5A6B;
+}
+.faq-cta{
+    max-width: 880px;
+    margin: 38px auto 0;
+    text-align: center;
+    font-size: 17px;
+    color: #4A5A6B;
+}
+.faq-cta a{
+    color: #00B0FF;
+    font-weight: bold;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.25s ease;
+}
+.faq-cta a:hover{
+    border-bottom-color: #00B0FF;
+}
+/* ***** End FAQ ***** */
 
 /* **** Contact **** */
 .contact-wrp{

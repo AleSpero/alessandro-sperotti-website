@@ -105,6 +105,14 @@
 	.companies-wrp{margin: 0;padding: 25px 0;}
 	.companies-wrp ul li{width: 50%;}
 
+	.faq-wrp{padding: 10px 0 35px;}
+	.faq-wrp h2{font-size: 24px;margin: 0 auto 20px;}
+	.faq-list{gap: 12px;}
+	.faq-question{padding: 16px 18px;font-size: 16px;line-height: 24px;gap: 14px;}
+	.faq-icon{font-size: 13px;}
+	.faq-answer-inner{padding: 0 18px 18px;font-size: 14px;line-height: 23px;}
+	.faq-cta{margin-top: 26px;font-size: 15px;}
+
 	.contact-wrp{padding: 35px 0;}
 	.contact-layout{flex-direction: column;gap: 36px;}
 	.contact-info h2{font-size: 28px;}

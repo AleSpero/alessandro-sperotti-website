@@ -17,6 +17,11 @@
   "stat_rating_label": "Repeat Clients",
   "banner_desc": "From new apps built from scratch, to bug fixing and taking over existing projects&mdash;across e-learning, fintech, healthcare, news and more.",
   "cta_talk": "Let's Talk",
+  "cta_book_call": "Book a Free Call",
+  "cta_view_work": "View My Work",
+  "calendly_intro": "Prefer to talk live? Book a free 30-min call directly.",
+  "calendly_big_label": "Book a Free 30-min Call",
+  "contact_or": "&mdash; or send a message below &mdash;",
 
   "meet_title": "Nice to meet you! <br>I'm Alessandro.",
   "meet_subtitle": "I help businesses and startups bring their app ideas to life&mdash;or make existing apps better. Whether you need a brand-new mobile app, improvements to an existing product, or expert advice on your mobile strategy, I've got you covered.",
@@ -32,6 +37,11 @@
 
   "work_title": "Selected Work",
 
+  "protesi_subtitle": "Healthcare &middot; Android / iOS / Web",
+  "protesi_feature1": "Helps healthcare professionals find medical aids (prosthetics and orthotics) from multiple manufacturers in one place",
+  "protesi_feature2": "AI-powered hybrid semantic search: look up an aid by name, by the condition it treats, or in plain natural language",
+  "protesi_feature3": "Generates a patient recommendation document with product details and tariff codes, plus filtering by body district",
+
   "mf_subtitle": "Financial News &middot; Android / iOS",
   "mf_feature1": "Companion app for Milano Finanza web platform",
   "mf_feature2": "Users can consume news, video articles, podcasts, financial data and more",
@@ -41,6 +51,11 @@
   "qa_feature1": "Video courses, webinars, quizzes and exams for a large content catalog",
   "qa_feature2": "Shipped features: reworked download system, interactive quizzes, home widget",
   "qa_feature3": "Increased MAU by 117%, daily downloads by 150%, review score from 3.5 to 4.5 over 6 months",
+
+  "ntplus_subtitle": "Legal &amp; Tax News &middot; Android / iOS",
+  "ntplus_feature1": "Audio, video, and web content on tax law, corporate law, labor regulations and more",
+  "ntplus_feature2": "Personalized Hub that lets users customize their home screen with preferred topics",
+  "ntplus_feature3": "Video ad management, real-time push notifications, and external purchase integration",
 
   "emid_subtitle": "Health &middot; Android / iOS",
   "emid_feature1": "Two distinct apps: one for health data, one for first-aid personnel",
@@ -57,7 +72,7 @@
   "lac_feature2": "App-wide PiP, videos and video ads, TikTok-style video view",
   "lac_feature3": "Real-time notifications and podcast support",
 
-  "klearn_subtitle": "Language Learning &middot; Android",
+  "klearn_subtitle": "Language Learning &middot; Android / iOS",
   "klearn_feature1": "An exciting way to learn Chinese with karaoke-style lessons",
   "klearn_feature2": "Built from scratch using state-of-the-art frameworks and technologies",
   "klearn_feature3": "Gamification with leaderboards, level system and rewards to boost engagement",
@@ -69,6 +84,25 @@
 
   "trusted_title": "Trusted By",
 
+  "faq_title": "Frequently Asked Questions",
+
+  "faq_q1": "How much does a mobile app cost?",
+  "faq_a1": "Usually, most projects fall into three brackets. Scoped work &mdash; a bug fix, a new feature, a codebase audit &mdash; starts from a few hundred euros. An MVP (Minimum Viable Product, a working product that validates your idea) usually sits between €3,000 and €12,000. Large, complex projects can reach figures between €20,000 and €40,000+. What moves the number: how many screens, whether a backend has to be built or your APIs already exist, third-party integrations like payments, video or maps, and whether the design is ready.\n\nAfter a short call I can give you a ballpark range for the type of project proposed, which can then be finalised and narrowed down in the following steps.",
+  "faq_q2": "How long does it take?",
+  "faq_a2": "A focused MVP usually takes 4-8 weeks from kickoff to store submission, though depending on complexity it can run to 3-6 months. Smaller work &mdash; a feature, a fix, a performance pass &mdash; takes from a few days to a couple of weeks. Add a few days at the end for App Store and Play Store review. At every stage of development you can see a preview of the app, so you can test the product with your own hands while it is being built.",
+  "faq_q3": "Freelancer or agency &mdash; which is right for my project?",
+  "faq_a3": "An agency can be the better choice for particularly complex projects, where design, backend, QA and project management all need to be staffed at once. A freelancer is the better choice when you prefer the person you talk to to be the same person writing the code. No markup for an account manager or a team of developers, no junior developer quietly assigned to the project, no rotating team: you get 8+ years of mobile experience directly, and for most apps this is both faster and cheaper.",
+  "faq_q4": "Native or cross-platform &mdash; what should I choose?",
+  "faq_a4": "It depends on the type of app. The most efficient choice is often a cross-platform framework, since a single codebase produces the app for both iOS and Android. There are particular cases &mdash; for example an app that needs heavy communication with operating system services, or low-level operations such as machine learning performed on the device &mdash; where it is better to build directly on the native framework. In any case, for 90% of projects a cross-platform solution is the recommended choice.",
+  "faq_q5": "Can you take over an existing app?",
+  "faq_a5": "Yes &mdash; it is an important part of my work. I start with a short audit of the code, architecture and dependencies to understand what can safely be changed, then we decide the priorities together. Inherited code with no documentation and no original developer available is a normal starting point, not an obstacle. On an e-learning app whose development I took over, monthly active users grew by 117% and the store rating went from 3.5 to 4.5 in six months.",
+  "faq_q6": "Who owns the code?",
+  "faq_a6": "Ownership of the code belongs solely to the client, not to the developer. Once the project is complete and the final balance is paid, the source code is transferred, which allows the client to work with other developers, make changes independently, and more.",
+  "faq_q7": "What should I expect from the first call?",
+  "faq_a7": "The first introductory call is usually about the project, the expectations and the requirements, and there I can already give a ballpark estimate of timing and cost. After that there will be further calls to define the requirements list &mdash; the list of features the app must have, described in depth. I then provide a detailed quote which, once accepted, marks the start of our collaboration.",
+  "faq_q8": "Do you handle design as well?",
+  "faq_a8": "Not directly &mdash; I work with several skilled, professional designers, and if the design of the application also needs doing, I have them carry out that work. As with every other phase of the project, there is continuous discussion to meet the client's expectations 100%. If the design has already been done, I am happy to build the application based on it.",
+  "faq_cta": "Still have a question? <a href=\"#lets-talk\" data-scroll-nav=\"1\">Get in touch</a> and I will get back to you.",
   "contact_title": "Let's Talk",
   "contact_lead": "Get in touch to start a conversation about your project. You can expect a response within 1-2 business days.",
   "contact_desc": "Use the contact form to send me a message, or reach out directly via email. If you'd prefer a live conversation, book a video call at your convenience.",

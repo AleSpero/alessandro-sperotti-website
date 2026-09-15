@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Build localized HTML pages from template.html + i18n/*.json."""
 
+import html as html_lib
 import json
 import os
 import re
@@ -47,6 +48,39 @@ def build_lang_switcher(current_code):
     )
 
 
+def build_faq_jsonld(translations):
+    """Build FAQPage structured data from the faq_q*/faq_a* translation keys."""
+
+    def to_plain_text(value):
+        text = re.sub(r"<[^>]+>", " ", html_lib.unescape(value))
+        return re.sub(r"\s+", " ", text).strip()
+
+    entities = []
+    index = 1
+    while True:
+        question = translations.get(f"faq_q{index}")
+        answer = translations.get(f"faq_a{index}")
+        if not question or not answer:
+            break
+        entities.append({
+            "@type": "Question",
+            "name": to_plain_text(question),
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": to_plain_text(answer),
+            },
+        })
+        index += 1
+
+    if not entities:
+        return ""
+
+    data = {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": entities}
+    body = json.dumps(data, ensure_ascii=False, indent=4)
+    body = "\n".join("        " + line for line in body.splitlines())
+    return f'<script type="application/ld+json">\n{body}\n        </script>'
+
+
 def build_page(template, translations, lang_code):
     cfg = LANGUAGES[lang_code]
     hreflang = build_hreflang_tags()
@@ -59,6 +93,7 @@ def build_page(template, translations, lang_code):
     html = html.replace("{{lang_switcher}}", switcher)
     html = html.replace("{{canonical_url}}", cfg["canonical"])
     html = html.replace("{{og_locale}}", cfg["og_locale"])
+    html = html.replace("{{faq_jsonld}}", build_faq_jsonld(translations))
 
     for key, value in translations.items():
         html = html.replace("{{" + key + "}}", value)

@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-822472418"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'AW-822472418');
+        </script>
+
         <!-- Meta -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -66,6 +75,81 @@
         }
         </script>
 
+
+        <!-- FAQ Structured Data -->
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "How much does a mobile app cost?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Usually, most projects fall into three brackets. Scoped work — a bug fix, a new feature, a codebase audit — starts from a few hundred euros. An MVP (Minimum Viable Product, a working product that validates your idea) usually sits between €3,000 and €12,000. Large, complex projects can reach figures between €20,000 and €40,000+. What moves the number: how many screens, whether a backend has to be built or your APIs already exist, third-party integrations like payments, video or maps, and whether the design is ready. After a short call I can give you a ballpark range for the type of project proposed, which can then be finalised and narrowed down in the following steps."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "How long does it take?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "A focused MVP usually takes 4-8 weeks from kickoff to store submission, though depending on complexity it can run to 3-6 months. Smaller work — a feature, a fix, a performance pass — takes from a few days to a couple of weeks. Add a few days at the end for App Store and Play Store review. At every stage of development you can see a preview of the app, so you can test the product with your own hands while it is being built."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Freelancer or agency — which is right for my project?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "An agency can be the better choice for particularly complex projects, where design, backend, QA and project management all need to be staffed at once. A freelancer is the better choice when you prefer the person you talk to to be the same person writing the code. No markup for an account manager or a team of developers, no junior developer quietly assigned to the project, no rotating team: you get 8+ years of mobile experience directly, and for most apps this is both faster and cheaper."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Native or cross-platform — what should I choose?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "It depends on the type of app. The most efficient choice is often a cross-platform framework, since a single codebase produces the app for both iOS and Android. There are particular cases — for example an app that needs heavy communication with operating system services, or low-level operations such as machine learning performed on the device — where it is better to build directly on the native framework. In any case, for 90% of projects a cross-platform solution is the recommended choice."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Can you take over an existing app?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes — it is an important part of my work. I start with a short audit of the code, architecture and dependencies to understand what can safely be changed, then we decide the priorities together. Inherited code with no documentation and no original developer available is a normal starting point, not an obstacle. On an e-learning app whose development I took over, monthly active users grew by 117% and the store rating went from 3.5 to 4.5 in six months."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Who owns the code?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Ownership of the code belongs solely to the client, not to the developer. Once the project is complete and the final balance is paid, the source code is transferred, which allows the client to work with other developers, make changes independently, and more."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "What should I expect from the first call?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "The first introductory call is usually about the project, the expectations and the requirements, and there I can already give a ballpark estimate of timing and cost. After that there will be further calls to define the requirements list — the list of features the app must have, described in depth. I then provide a detailed quote which, once accepted, marks the start of our collaboration."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Do you handle design as well?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Not directly — I work with several skilled, professional designers, and if the design of the application also needs doing, I have them carry out that work. As with every other phase of the project, there is continuous discussion to meet the client's expectations 100%. If the design has already been done, I am happy to build the application based on it."
+                    }
+                }
+            ]
+        }
+        </script>
+
         <!-- Favicon -->
         <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png" />
 
@@ -82,9 +166,15 @@
         (function(){
             var saved=localStorage.getItem("pref_lang");
             var cur=document.documentElement.lang.split("-")[0];
-            var nav=(navigator.language||"").toLowerCase();
-            var detected=nav.indexOf("it")===0?"it":nav.indexOf("zh")===0?"zh":"en";
+            var langs=(navigator.languages||[navigator.language||""]);
+            var detected="en";
+            for(var i=0;i<langs.length;i++){
+                var l=langs[i].toLowerCase();
+                if(l.indexOf("it")===0){detected="it";break;}
+                if(l.indexOf("zh")===0){detected="zh";break;}
+            }
             var target=saved||detected;
+            console.log("[lang-detect]","saved:",saved,"cur:",cur,"navigator.languages:",JSON.stringify(langs),"detected:",detected,"target:",target);
             if(target!==cur){
                 var b="";
                 window.location.replace(target==="en"?b+"index.html":b+target+"/index.html");
@@ -147,8 +237,8 @@
                         <h6>From new apps built from scratch, to bug fixing and taking over existing projects&mdash;across e-learning, fintech, healthcare, news and more.</h6>
 
                         <div class="hero-cta-group">
-                            <a href="https://calendly.com/alespero" target="_blank" class="btn-main btn-calendly">
-                                <i class="far fa-calendar-alt"></i> Book a Free Call
+                            <a href="#" data-scroll-nav="1" class="btn-main">
+                                <i class="far fa-comments fa-fw"></i> Let's Talk
                             </a>
                             <a href="#" class="btn-main btn-outline" data-scroll-nav="0">
                                 <i class="fas fa-briefcase"></i> View My Work
@@ -209,33 +299,30 @@
             <!-- End Nice To Meet You -->
 
             <!-- My Work -->
-            <section class="work-wrp" data-scroll-index="0">
+            <section id="selected-work" class="work-wrp" data-scroll-index="0">
                 <div class="container">
                     <h2>Selected Work</h2>
 
                     <div class="project-list">
 
-                        <!-- Milano Finanza -->
+                        <!-- ProteSi — hidden until the app stores go live
                         <div class="project-card">
                             <div class="project-screenshots">
-                                <img src="images/app-mf-1.png" alt="Milano Finanza screenshot">
-                                <img src="images/app-mf-2.png" alt="Milano Finanza screenshot">
+                                <img src="images/app-protesi-1.png" alt="ProteSi screenshot">
+                                <img src="images/app-protesi-2.png" alt="ProteSi screenshot">
                             </div>
                             <div class="project-info">
-                                <span class="project-tag">Flutter</span>
-                                <h3>Milano Finanza</h3>
-                                <span class="project-subtitle">Financial News &middot; Android / iOS</span>
+                                <span class="project-tag">Flutter &middot; Supabase</span>
+                                <h3>ProteS&igrave;</h3>
+                                <span class="project-subtitle">Healthcare &middot; Android / iOS / Web</span>
                                 <ul class="project-features">
-                                    <li>Companion app for Milano Finanza web platform</li>
-                                    <li>Users can consume news, video articles, podcasts, financial data and more</li>
-                                    <li>Features include app-wide PiP, ad management including video ads, real time notifications</li>
+                                    <li>Helps healthcare professionals find medical aids (prosthetics and orthotics) from multiple manufacturers in one place</li>
+                                    <li>AI-powered hybrid semantic search: look up an aid by name, by the condition it treats, or in plain natural language</li>
+                                    <li>Generates a patient recommendation document with product details and tariff codes, plus filtering by body district</li>
                                 </ul>
-                                <div class="project-links">
-                                    <a href="https://play.google.com/store/apps/details?id=com.classeditori.milanofinanza" target="_blank"><i class="fab fa-google-play"></i> Android</a>
-                                    <a href="https://apps.apple.com/it/app/milano-finanza-class-cnbc/id6749318194" target="_blank"><i class="fab fa-apple"></i> iOS</a>
-                                </div>
                             </div>
                         </div>
+                        -->
 
                         <!-- QA Platform -->
                         <div class="project-card">
@@ -259,6 +346,50 @@
                             </div>
                         </div>
 
+                        <!-- World Clock -->
+                        <div class="project-card">
+                            <div class="project-screenshots">
+                                <img src="images/app-wclock-1.png" alt="World Clock screenshot">
+                                <img src="images/app-wclock-2.png" alt="World Clock screenshot">
+                            </div>
+                            <div class="project-info">
+                                <span class="project-tag">Kotlin &middot; Flutter</span>
+                                <h3>World Clock</h3>
+                                <span class="project-subtitle">Utility &middot; Android / iOS</span>
+                                <ul class="project-features">
+                                    <li>Simple, lightweight app to check local time, weather, and attractions worldwide</li>
+                                    <li>Personal project, first Android-only then rewritten in Flutter for iOS</li>
+                                    <li>300k+ total downloads, 2k daily users, average rating of 4.6/5</li>
+                                </ul>
+                                <div class="project-links">
+                                    <a href="https://play.google.com/store/apps/details?id=com.alesp.orologiomondiale" target="_blank"><i class="fab fa-google-play"></i> Android</a>
+                                    <a href="https://apps.apple.com/us/app/world-clock-timezones-widget/id1455516286" target="_blank"><i class="fab fa-apple"></i> iOS</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- LaC News24 -->
+                        <div class="project-card">
+                            <div class="project-info">
+                                <span class="project-tag">Kotlin &middot; Swift</span>
+                                <h3>LaC News24</h3>
+                                <span class="project-subtitle">News &middot; Android / iOS</span>
+                                <ul class="project-features">
+                                    <li>Support for LacNews24 news platform</li>
+                                    <li>App-wide PiP, videos and video ads, TikTok-style video view</li>
+                                    <li>Real-time notifications and podcast support</li>
+                                </ul>
+                                <div class="project-links">
+                                    <a href="https://play.google.com/store/apps/details?id=com.ramanet.retekalabria" target="_blank"><i class="fab fa-google-play"></i> Android</a>
+                                    <a href="https://apps.apple.com/us/app/lac-news24/id939631672" target="_blank"><i class="fab fa-apple"></i> iOS</a>
+                                </div>
+                            </div>
+                            <div class="project-screenshots">
+                                <img src="images/app-lac-1.png" alt="LaC News24 screenshot">
+                                <img src="images/app-lac-2.png" alt="LaC News24 screenshot">
+                            </div>
+                        </div>
+
                         <!-- EMiD -->
                         <div class="project-card">
                             <div class="project-screenshots">
@@ -277,56 +408,12 @@
                             </div>
                         </div>
 
-                        <!-- World Clock -->
-                        <div class="project-card">
-                            <div class="project-info">
-                                <span class="project-tag">Kotlin &middot; Flutter</span>
-                                <h3>World Clock</h3>
-                                <span class="project-subtitle">Utility &middot; Android / iOS</span>
-                                <ul class="project-features">
-                                    <li>Simple, lightweight app to check local time, weather, and attractions worldwide</li>
-                                    <li>Personal project, first Android-only then rewritten in Flutter for iOS</li>
-                                    <li>300k+ total downloads, 2k daily users, average rating of 4.6/5</li>
-                                </ul>
-                                <div class="project-links">
-                                    <a href="https://play.google.com/store/apps/details?id=com.alesp.orologiomondiale" target="_blank"><i class="fab fa-google-play"></i> Android</a>
-                                    <a href="https://apps.apple.com/us/app/world-clock-timezones-widget/id1455516286" target="_blank"><i class="fab fa-apple"></i> iOS</a>
-                                </div>
-                            </div>
-                            <div class="project-screenshots">
-                                <img src="images/app-wclock-1.png" alt="World Clock screenshot">
-                                <img src="images/app-wclock-2.png" alt="World Clock screenshot">
-                            </div>
-                        </div>
-
-                        <!-- LaC News24 -->
-                        <div class="project-card">
-                            <div class="project-screenshots">
-                                <img src="images/app-lac-1.png" alt="LaC News24 screenshot">
-                                <img src="images/app-lac-2.png" alt="LaC News24 screenshot">
-                            </div>
-                            <div class="project-info">
-                                <span class="project-tag">Kotlin &middot; Swift</span>
-                                <h3>LaC News24</h3>
-                                <span class="project-subtitle">News &middot; Android / iOS</span>
-                                <ul class="project-features">
-                                    <li>Support for LacNews24 news platform</li>
-                                    <li>App-wide PiP, videos and video ads, TikTok-style video view</li>
-                                    <li>Real-time notifications and podcast support</li>
-                                </ul>
-                                <div class="project-links">
-                                    <a href="https://play.google.com/store/apps/details?id=com.ramanet.retekalabria" target="_blank"><i class="fab fa-google-play"></i> Android</a>
-                                    <a href="https://apps.apple.com/us/app/lac-news24/id939631672" target="_blank"><i class="fab fa-apple"></i> iOS</a>
-                                </div>
-                            </div>
-                        </div>
-
                         <!-- Karalearn -->
                         <div class="project-card">
                             <div class="project-info">
-                                <span class="project-tag">Kotlin</span>
+                                <span class="project-tag">Flutter</span>
                                 <h3>Karalearn</h3>
-                                <span class="project-subtitle">Language Learning &middot; Android</span>
+                                <span class="project-subtitle">Language Learning &middot; Android / iOS</span>
                                 <ul class="project-features">
                                     <li>An exciting way to learn Chinese with karaoke-style lessons</li>
                                     <li>Built from scratch using state-of-the-art frameworks and technologies</li>
@@ -334,11 +421,56 @@
                                 </ul>
                                 <div class="project-links">
                                     <a href="https://play.google.com/store/apps/details?id=com.karalearn.app" target="_blank"><i class="fab fa-google-play"></i> Android</a>
+                                    <a href="https://apps.apple.com/it/app/karalearn-impara-il-cinese/id6779179949" target="_blank"><i class="fab fa-apple"></i> iOS</a>
                                 </div>
                             </div>
                             <div class="project-screenshots">
                                 <img src="images/app-klearn-1.png" alt="Karalearn screenshot">
                                 <img src="images/app-klearn-2.png" alt="Karalearn screenshot">
+                            </div>
+                        </div>
+
+                        <!-- Milano Finanza -->
+                        <div class="project-card">
+                            <div class="project-screenshots">
+                                <img src="images/app-mf-1.png" alt="Milano Finanza screenshot">
+                                <img src="images/app-mf-2.png" alt="Milano Finanza screenshot">
+                            </div>
+                            <div class="project-info">
+                                <span class="project-tag">Flutter</span>
+                                <h3>Milano Finanza</h3>
+                                <span class="project-subtitle">Financial News &middot; Android / iOS</span>
+                                <ul class="project-features">
+                                    <li>Companion app for Milano Finanza web platform</li>
+                                    <li>Users can consume news, video articles, podcasts, financial data and more</li>
+                                    <li>Features include app-wide PiP, ad management including video ads, real time notifications</li>
+                                </ul>
+                                <div class="project-links">
+                                    <a href="https://play.google.com/store/apps/details?id=com.classeditori.milanofinanza" target="_blank"><i class="fab fa-google-play"></i> Android</a>
+                                    <a href="https://apps.apple.com/it/app/milano-finanza-class-cnbc/id6749318194" target="_blank"><i class="fab fa-apple"></i> iOS</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Norme & Tributi Plus -->
+                        <div class="project-card">
+                            <div class="project-info">
+                                <span class="project-tag">Flutter</span>
+                                <h3>Norme&amp;Tributi Plus</h3>
+                                <span class="project-subtitle">Legal &amp; Tax News &middot; Android / iOS</span>
+                                <ul class="project-features">
+                                    <li>Audio, video, and web content on tax law, corporate law, labor regulations and more</li>
+                                    <li>Personalized Hub that lets users customize their home screen with preferred topics</li>
+                                    <li>Video ad management, real-time push notifications, and external purchase integration</li>
+                                </ul>
+                                <div class="project-links">
+                                    <a href="https://play.google.com/store/apps/details?id=com.ilsole24ore.normetributiplus&hl=it" target="_blank"><i class="fab fa-google-play"></i> Android</a>
+                                    <a href="https://apps.apple.com/it/app/norme-tributi-plus/id6739216243" target="_blank"><i class="fab fa-apple"></i> iOS</a>
+                                </div>
+                            </div>
+                            <div class="project-screenshots">
+                                <img src="images/app-ntplus-1.png" alt="Norme & Tributi Plus screenshot">
+                                <img src="images/app-ntplus-2.png" alt="Norme & Tributi Plus screenshot">
                             </div>
                         </div>
 
@@ -397,8 +529,102 @@
             </section>
             <!-- End My Work -->
 
+            <!-- FAQ -->
+            <section class="faq-wrp">
+                <div class="container">
+                    <h2>Frequently Asked Questions</h2>
+
+                    <div class="faq-list">
+                        <div class="faq-item">
+                            <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-1" id="faq-question-1">
+                                <span>How much does a mobile app cost?</span>
+                                <i class="fas fa-chevron-down faq-icon" aria-hidden="true"></i>
+                            </button>
+                            <div class="faq-answer" id="faq-answer-1" role="region" aria-labelledby="faq-question-1">
+                                <div class="faq-answer-inner">Usually, most projects fall into three brackets. Scoped work &mdash; a bug fix, a new feature, a codebase audit &mdash; starts from a few hundred euros. An MVP (Minimum Viable Product, a working product that validates your idea) usually sits between €3,000 and €12,000. Large, complex projects can reach figures between €20,000 and €40,000+. What moves the number: how many screens, whether a backend has to be built or your APIs already exist, third-party integrations like payments, video or maps, and whether the design is ready.
+
+After a short call I can give you a ballpark range for the type of project proposed, which can then be finalised and narrowed down in the following steps.</div>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-2" id="faq-question-2">
+                                <span>How long does it take?</span>
+                                <i class="fas fa-chevron-down faq-icon" aria-hidden="true"></i>
+                            </button>
+                            <div class="faq-answer" id="faq-answer-2" role="region" aria-labelledby="faq-question-2">
+                                <div class="faq-answer-inner">A focused MVP usually takes 4-8 weeks from kickoff to store submission, though depending on complexity it can run to 3-6 months. Smaller work &mdash; a feature, a fix, a performance pass &mdash; takes from a few days to a couple of weeks. Add a few days at the end for App Store and Play Store review. At every stage of development you can see a preview of the app, so you can test the product with your own hands while it is being built.</div>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-3" id="faq-question-3">
+                                <span>Freelancer or agency &mdash; which is right for my project?</span>
+                                <i class="fas fa-chevron-down faq-icon" aria-hidden="true"></i>
+                            </button>
+                            <div class="faq-answer" id="faq-answer-3" role="region" aria-labelledby="faq-question-3">
+                                <div class="faq-answer-inner">An agency can be the better choice for particularly complex projects, where design, backend, QA and project management all need to be staffed at once. A freelancer is the better choice when you prefer the person you talk to to be the same person writing the code. No markup for an account manager or a team of developers, no junior developer quietly assigned to the project, no rotating team: you get 8+ years of mobile experience directly, and for most apps this is both faster and cheaper.</div>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-4" id="faq-question-4">
+                                <span>Native or cross-platform &mdash; what should I choose?</span>
+                                <i class="fas fa-chevron-down faq-icon" aria-hidden="true"></i>
+                            </button>
+                            <div class="faq-answer" id="faq-answer-4" role="region" aria-labelledby="faq-question-4">
+                                <div class="faq-answer-inner">It depends on the type of app. The most efficient choice is often a cross-platform framework, since a single codebase produces the app for both iOS and Android. There are particular cases &mdash; for example an app that needs heavy communication with operating system services, or low-level operations such as machine learning performed on the device &mdash; where it is better to build directly on the native framework. In any case, for 90% of projects a cross-platform solution is the recommended choice.</div>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-5" id="faq-question-5">
+                                <span>Can you take over an existing app?</span>
+                                <i class="fas fa-chevron-down faq-icon" aria-hidden="true"></i>
+                            </button>
+                            <div class="faq-answer" id="faq-answer-5" role="region" aria-labelledby="faq-question-5">
+                                <div class="faq-answer-inner">Yes &mdash; it is an important part of my work. I start with a short audit of the code, architecture and dependencies to understand what can safely be changed, then we decide the priorities together. Inherited code with no documentation and no original developer available is a normal starting point, not an obstacle. On an e-learning app whose development I took over, monthly active users grew by 117% and the store rating went from 3.5 to 4.5 in six months.</div>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-6" id="faq-question-6">
+                                <span>Who owns the code?</span>
+                                <i class="fas fa-chevron-down faq-icon" aria-hidden="true"></i>
+                            </button>
+                            <div class="faq-answer" id="faq-answer-6" role="region" aria-labelledby="faq-question-6">
+                                <div class="faq-answer-inner">Ownership of the code belongs solely to the client, not to the developer. Once the project is complete and the final balance is paid, the source code is transferred, which allows the client to work with other developers, make changes independently, and more.</div>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-7" id="faq-question-7">
+                                <span>What should I expect from the first call?</span>
+                                <i class="fas fa-chevron-down faq-icon" aria-hidden="true"></i>
+                            </button>
+                            <div class="faq-answer" id="faq-answer-7" role="region" aria-labelledby="faq-question-7">
+                                <div class="faq-answer-inner">The first introductory call is usually about the project, the expectations and the requirements, and there I can already give a ballpark estimate of timing and cost. After that there will be further calls to define the requirements list &mdash; the list of features the app must have, described in depth. I then provide a detailed quote which, once accepted, marks the start of our collaboration.</div>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-8" id="faq-question-8">
+                                <span>Do you handle design as well?</span>
+                                <i class="fas fa-chevron-down faq-icon" aria-hidden="true"></i>
+                            </button>
+                            <div class="faq-answer" id="faq-answer-8" role="region" aria-labelledby="faq-question-8">
+                                <div class="faq-answer-inner">Not directly &mdash; I work with several skilled, professional designers, and if the design of the application also needs doing, I have them carry out that work. As with every other phase of the project, there is continuous discussion to meet the client's expectations 100%. If the design has already been done, I am happy to build the application based on it.</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="faq-cta">Still have a question? <a href="#lets-talk" data-scroll-nav="1">Get in touch</a> and I will get back to you.</p>
+                </div>
+            </section>
+            <!-- End FAQ -->
+
             <!-- Lets Talk -->
-            <section class="contact-wrp" data-scroll-index="1">
+            <section id="lets-talk" class="contact-wrp" data-scroll-index="1">
                 <div class="container">
                     <div class="contact-layout">
                         <div class="contact-info">
@@ -411,6 +637,10 @@
                                 <a href="mailto:alessandro@sperodevs.com" class="contact-channel">
                                     <i class="far fa-envelope"></i>
                                     <span>alessandro@sperodevs.com</span>
+                                </a>
+                                <a href="https://calendly.com/alespero" target="_blank" class="contact-channel">
+                                    <i class="far fa-calendar-alt"></i>
+                                    <span>Schedule a video call</span>
                                 </a>
                                 <a href="https://www.linkedin.com/in/alessandro-sperotti-89b847141/" target="_blank" class="contact-channel">
                                     <i class="fab fa-linkedin"></i>

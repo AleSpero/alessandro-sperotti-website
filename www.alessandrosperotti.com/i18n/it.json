@@ -15,22 +15,32 @@
   "stat_downloads_label": "App Rilasciate",
   "stat_rating_value": "100%",
   "stat_rating_label": "Clienti Soddisfatti",
-  "banner_desc": "Dallo sviluppo di app da zero, alla correzione di bug e al subentro su progetti esistenti&mdash;in e-learning, fintech, sanit&agrave;, news e altro.",
+  "banner_desc": "Dallo sviluppo di app partendo da zero, a correzione di bug e al subentro su progetti esistenti, in e-learning, fintech, sanit&agrave;, news e altri mercati.",
   "cta_talk": "Contatti",
+  "cta_book_call": "Prenota una Call Gratuita",
+  "cta_view_work": "Vedi i Progetti",
+  "calendly_intro": "Preferisci parlare dal vivo? Prenota una call gratuita di 30 minuti.",
+  "calendly_big_label": "Prenota una Call Gratuita di 30 min",
+  "contact_or": "&mdash; oppure inviami un messaggio &mdash;",
 
   "meet_title": "Piacere di conoscerti! <br>Sono Alessandro.",
-  "meet_subtitle": "Aiuto i miei clienti a realizzare le loro idee di app&mdash;o a migliorare quelle esistenti. che ci sia bisogno di una nuova app mobile, di miglioramenti a un prodotto esistente o di consulenza sulla strategia mobile, posso aiutare.",
+  "meet_subtitle": "Aiuto i miei clienti a realizzare le loro idee di app o a migliorare quelle esistenti. Che sia un progetto personale o un nuovo business in partenza, voglio garantire ai miei clienti un prodotto di alta qualità orientato al successo.",
   "service1_title": "Sviluppo App",
-  "service1_desc": "Trasformo la tua idea in un'app Android e iOS curata, passando dalla fase di progettazione a quella di design ed infine testing e pubblicazione, fornendo servizi aggiuntivi per il mantenimento post-rilascio.",
-  "service2_title": "Migliora la Tua App",
-  "service2_desc": "Presa in carico di un progetto esistente, aggiunta di nuove funzionalit&agrave, o miglioramento di performance, KPIs e recensioni.",
-  "service3_title": "Correzione &amp; Manutenzione",
+  "service1_desc": "Sviluppo da zero la tua idea in un'app Android e iOS curata, partendo dalla fase di progettazione e raccolta requisiti a quella di design, sviluppo, testing e pubblicazione, garantendo assistenza e presenza in ogni fase del progetto.",
+  "service2_title": "Miglioramenti e sviluppi aggiuntivi",
+  "service2_desc": "Presa in carico di un progetto esistente, aggiunta di nuove funzionalit&agrave, o miglioramento di performance, con conseguente miglioramento di KPIs e recensioni.",
+  "service3_title": "Bug fixing &amp; Manutenzione",
   "service3_desc": "Bug fixing, aggiornamento librerie e codice, in modo da mantenere il tuo progetto sempre al passo con i tempi.",
   "service4_title": "Strategia &amp; Consulenza",
   "service4_desc": "Consulenza su impostazione progetto, domande tecniche su sviluppo mobile, pubblicazione sugli store e crescita.",
   "tech_label": "Tecnologie con cui Lavoro",
 
   "work_title": "Lavori Selezionati",
+
+  "protesi_subtitle": "Sanit&agrave; &middot; Android / iOS / Web",
+  "protesi_feature1": "Permette ai professionisti sanitari di trovare ausili medici (protesi e ortesi) di diverse aziende in un unico posto",
+  "protesi_feature2": "Ricerca semantica ibrida mediata dall&rsquo;AI: si cerca un ausilio per nome, per la patologia che cura o in linguaggio naturale",
+  "protesi_feature3": "Genera per il paziente un documento di consiglio con le informazioni del prodotto e il codice prescrittivo, con filtri per distretto corporeo",
 
   "mf_subtitle": "Notizie Finanziarie &middot; Android / iOS",
   "mf_feature1": "App companion per la piattaforma web di Milano Finanza",
@@ -41,6 +51,11 @@
   "qa_feature1": "Corsi video, webinar, quiz ed esami per un ampio catalogo di contenuti",
   "qa_feature2": "Funzionalit&agrave; rilasciate: sistema download rinnovato, quiz interattivi, widget home",
   "qa_feature3": "MAU aumentati del 117%, download giornalieri del 150%, valutazione da 3.5 a 4.5 in 6 mesi",
+
+  "ntplus_subtitle": "Notizie Fiscali e Legali &middot; Android / iOS",
+  "ntplus_feature1": "Fruizione di contenuti audio, video e web su notizie di fisco, diritto ed altro",
+  "ntplus_feature2": "Hub personalizzato che consente all'utente di personalizzare la propria schermata home",
+  "ntplus_feature3": "Gestione pubblicit&agrave; video, notifiche in tempo reale, external purchase",
 
   "emid_subtitle": "Sanit&agrave; &middot; Android / iOS",
   "emid_feature1": "Due app distinte: una per i dati sanitari, una per il personale di primo soccorso",
@@ -57,7 +72,7 @@
   "lac_feature2": "PiP a livello di app, video e video ads, visualizzazione video stile TikTok",
   "lac_feature3": "Notifiche in tempo reale e supporto podcast",
 
-  "klearn_subtitle": "Apprendimento Lingue &middot; Android",
+  "klearn_subtitle": "Apprendimento Lingue &middot; Android / iOS",
   "klearn_feature1": "Un modo divertente per imparare il cinese con lezioni in stile karaoke",
   "klearn_feature2": "Sviluppata da zero usando framework e tecnologie all'avanguardia",
   "klearn_feature3": "Gamification con classifiche, sistema a livelli e ricompense per aumentare l'engagement",
@@ -68,6 +83,34 @@
   "avq_feature3": "Entrambe le versioni sfruttano i pi&ugrave; recenti framework UI (SwiftUI, Jetpack Compose)",
 
   "trusted_title": "Tra i miei clienti",
+
+  "faq_title": "Domande Frequenti",
+
+  "faq_q1": "Quanto costa un'app mobile?",
+  "faq_a1": "Solitamente, la maggior parte dei progetti rientra in tre fasce. Un intervento circoscritto &mdash; la correzione di un bug, una nuova funzionalit&agrave;, un audit del codice &mdash; parte da poche centinaia di euro. Un MVP (Minimum Viable Product, un prodotto funzionante che valida la tua idea) si colloca di solito tra €3.000 e €12.000. Progetti grandi e complessi possono raggiungere cifre dai €20.000 ai €40.000+. A spostare la cifra sono: il numero di schermate, se il backend va costruito o le tue API esistono gi&agrave;, le integrazioni con servizi terzi come pagamenti, video o mappe, e se il design &egrave; gi&agrave; pronto.\n\nDopo una breve call posso fornire un range spannometrico per il tipo di progetto proposto, che poi si potrà andare a finalizzare e restringere nei passi successivi.",
+
+  "faq_q2": "Quanto tempo serve?",
+  "faq_a2": "Un MVP mirato richiede di solito 4-8 settimane dal kickoff alla pubblicazione sugli store, ma in base alla complessità si può arrivare a 3-6 mesi. Gli interventi pi&ugrave; piccoli &mdash; una funzionalit&agrave;, una correzione, un lavoro sulle performance &mdash; richiedono da qualche giorno a un paio di settimane. Alla fine vanno aggiunti alcuni giorni per la revisione di App Store e Play Store. Durante ogni fase dello sviluppo il cliente può vedere un'anteprima dell'app, in modo da testare il prodotto con le proprie mani nel corso dello sviluppo.",
+
+  "faq_q3": "Freelance o agenzia &mdash; cosa conviene al mio progetto?",
+  "faq_a3": "Un'agenzia può essere una scelta migliore per progetti particolarmente complessi, dove servono design, backend, QA e project management attivi tutti insieme. Un freelancer è la scelta migliore quando si preferisce che la persona con cui si parla sia la stessa che scrive il codice. Nessun ricarico per l'account manager o un team di sviluppatori, nessuno sviluppatore junior assegnato in silenzio al progetto, nessun team che cambia in corsa: vengono direttamente forniti 8+ anni di esperienza mobile, e per la maggior parte delle app questo &egrave; pi&ugrave; veloce ed economico.",
+
+  "faq_q4": "Nativo o cross-platform &mdash; cosa scegliere?",
+  "faq_a4": "Dipende dal tipo di app, spesso la scelta più efficiente è un framework cross-platform, in quanto si ha solo un codice che produce l'app per entrambe le piattaforme iOS e Android. Ci sono alcuni casi particolari, come ad esempio nel caso di un'app che necessita di una forte comunicazione con i servizi del sistema operativo o di operazioni a basso livello (es: Machine Learning svolto sul device) in cui sarebbe meglio sviluppare l'app direttamente sul framework nativo. In ogni caso, per il 90% dei progetti è raccomandato di scegliere una soluzione cross-platform. ",
+
+  "faq_q5": "Puoi subentrare su un'app gi&agrave; esistente?",
+  "faq_a5": "S&igrave;, &egrave; una parte importante del mio lavoro. Parto da un breve audit di codice, architettura e dipendenze per capire cosa si pu&ograve; toccare in sicurezza, poi decidiamo insieme le priorit&agrave;. Un codice ereditato senza documentazione e senza lo sviluppatore originale a disposizione &egrave; un punto di partenza normale, non un ostacolo. Su un'app e-learning di cui ho preso in carico lo sviluppo, gli utenti attivi mensili sono cresciuti del 117% e il punteggio sullo store &egrave; passato da 3,5 a 4,5 in sei mesi.",
+
+  "faq_q6": "Di chi &egrave; il codice?",
+  "faq_a6": "La proprietà del codice è solamente del cliente e non dello sviluppatore. Una volta concluso il progetto ed al pagamento del saldo finale, verrà trasferito il codice sorgente, che consentirà al cliente ad esempio di lavorare con altri sviluppatori, effettuare modifiche in autonomia e altro.",
+
+  "faq_q7": "Cosa mi devo aspettare dalla prima call?",
+  "faq_a7": "Nella prima call conoscitiva di solito si parla del progetto, le aspettative ed i requisiti, dove già posso fornire una stima spannometrica di tempistiche e prezzi. Successivamente ci saranno altre chiamate in cui si definisce la lista dei requisiti, ossia la lista di funzionalità che l'app deve avere, descritte in maniera approfondita. Dopo di ciò, fornirò un preventivo dettagliato, il quale se accettato sancirà l'inizio della nostra collaborazione.",
+
+  "faq_q8": "Ti occupi anche del design?",
+  "faq_a8": "Non direttamente - collaboro con più designer competenti e professionali, e nel caso ci sia da fare anche il design dell'applicazione farò fare il lavoro a loro, ovviamente come tutte le altre fasi del progetto ci sarà un continuo confronto per soddisfare le aspettative del cliente al 100%. Nel caso il design sia già stato fatto ed implementato, sono felice di costruire l'applicazione basandomi su quello.",
+
+  "faq_cta": "Hai un'altra domanda? <a href=\"#lets-talk\" data-scroll-nav=\"1\">Scrivimi</a> e verrai ricontattato.",
 
   "contact_title": "Contatti",
   "contact_lead": "Contattami per iniziare una conversazione sul tuo progetto. Puoi aspettarti una risposta entro 1-2 giorni lavorativi.",
