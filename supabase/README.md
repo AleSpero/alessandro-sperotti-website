@@ -56,8 +56,7 @@ publishable key becomes public on the website.
 
 4. **Website.** In `www.alessandrosperotti.com/template.html`, fill in
    `window.LEAD_CAPTURE` with the project URL and publishable key
-   (Project Settings → API Keys), then push: Vercel runs `build.py` and deploys. The
-   privacy note under the email field only appears once this is set.
+   (Project Settings → API Keys), then push: Vercel runs `build.py` and deploys.
 
 5. **Go live** once the dry-run emails look right:
 

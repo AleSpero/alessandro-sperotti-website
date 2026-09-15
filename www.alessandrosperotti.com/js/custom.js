@@ -249,7 +249,6 @@ $(document).ready(function () {
         }
 
         if (enabled) {
-            $form.find(".form-capture-note").prop("hidden", false);
             $form.on("input", "input, textarea", function () {
                 clearTimeout(timer);
                 timer = setTimeout(capture, 2000);
