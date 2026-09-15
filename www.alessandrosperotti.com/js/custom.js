@@ -196,6 +196,81 @@ $(document).ready(function () {
     }
     /* **** End Umami — Section visibility **** */
 
+    /* **** Contact Form — draft capture **** */
+    // Saves what visitors type (once the email looks valid) so those who never
+    // send the form get a single follow-up email. See supabase/README.md.
+    var leadCapture = (function () {
+        var cfg = window.LEAD_CAPTURE || {};
+        var $form = $("#contact-form");
+        var enabled = !!(cfg.url && cfg.key && $form.length && window.fetch);
+        var EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+        var id = null;
+        var lastPayload = "";
+        var timer = null;
+
+        function leadId() {
+            if (id) return id;
+            try { id = localStorage.getItem("contact_lead_id"); } catch (e) {}
+            if (!id) {
+                id = window.crypto && crypto.randomUUID ? crypto.randomUUID() :
+                    "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, function (c) {
+                        var r = Math.random() * 16 | 0;
+                        return (c === "x" ? r : (r & 0x3 | 0x8)).toString(16);
+                    });
+                try { localStorage.setItem("contact_lead_id", id); } catch (e) {}
+            }
+            return id;
+        }
+
+        function rpc(name, params, keepalive) {
+            return fetch(cfg.url + "/rest/v1/rpc/" + name, {
+                method: "POST",
+                headers: { "Content-Type": "application/json", "apikey": cfg.key },
+                body: JSON.stringify(params),
+                keepalive: !!keepalive
+            }).catch(function () {});
+        }
+
+        function capture(keepalive) {
+            clearTimeout(timer);
+            var email = $.trim($form.find('[name="email"]').val() || "");
+            if (!EMAIL_RE.test(email)) return;
+            var params = {
+                p_id: leadId(),
+                p_email: email,
+                p_name: $.trim($form.find('[name="name"]').val() || ""),
+                p_message: $.trim($form.find('[name="message"]').val() || ""),
+                p_lang: (document.documentElement.lang || "en").split("-")[0]
+            };
+            var payload = JSON.stringify(params);
+            if (payload === lastPayload) return;
+            lastPayload = payload;
+            rpc("capture_contact_lead", params, keepalive);
+        }
+
+        if (enabled) {
+            $form.find(".form-capture-note").prop("hidden", false);
+            $form.on("input", "input, textarea", function () {
+                clearTimeout(timer);
+                timer = setTimeout(capture, 2000);
+            });
+            $form.on("change", "input, textarea", function () { capture(false); });
+            window.addEventListener("pagehide", function () { capture(true); });
+            document.addEventListener("visibilitychange", function () {
+                if (document.visibilityState === "hidden") capture(true);
+            });
+        }
+
+        return {
+            submitted: function () {
+                if (!enabled) return;
+                clearTimeout(timer);
+                rpc("mark_contact_lead_submitted", { p_id: leadId() }, true);
+            }
+        };
+    })();
+    /* **** End Contact Form — draft capture **** */
+
     /* **** Contact Form **** */
     $("#contact-form").on("submit", function (e) {
         e.preventDefault();
@@ -219,10 +294,10 @@ $(document).ready(function () {
                 console.log("[ContactForm] Response status:", xhr.status);
                 console.log("[ContactForm] Response body:", res);
                 if (res && res.success) {
+                    leadCapture.submitted();
                     $feedback.text($feedback.data("success"))
                              .addClass("form-success").fadeIn();
                     $form[0].reset();
-                    if (typeof turnstile !== "undefined") turnstile.reset();
                     // Google Ads conversion — form submitted
                     if (typeof gtag !== "undefined") {
                         gtag('event', 'conversion', {
@@ -245,6 +320,8 @@ $(document).ready(function () {
             },
             complete: function () {
                 $btn.prop("disabled", false).html(originalHtml);
+                // Turnstile tokens are single-use: get a fresh one for the next attempt.
+                if (typeof turnstile !== "undefined") turnstile.reset();
             }
         });
     });

@@ -111,6 +111,7 @@
   "form_title": "Contact Form",
   "form_name": "Name",
   "form_email": "Email Address",
+  "form_capture_note": "If you enter your email, I may save what you&rsquo;ve written so far to follow up once by email, even if you don&rsquo;t send the form.",
   "form_message": "Your Message",
   "form_submit": "Submit",
   "form_success": "Message sent! I'll get back to you shortly.",

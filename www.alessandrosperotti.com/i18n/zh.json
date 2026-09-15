@@ -111,6 +111,7 @@
   "form_title": "联系表单",
   "form_name": "姓名",
   "form_email": "电子邮箱",
+  "form_capture_note": "填写邮箱后，即使您没有提交表单，我也可能保存已填写的内容，并通过邮件联系您一次。",
   "form_message": "您的留言",
   "form_submit": "提交",
   "form_success": "消息已发送！我会尽快回复您。",

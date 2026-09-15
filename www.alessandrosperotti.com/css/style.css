@@ -855,6 +855,12 @@ header.nav-new {
 .cnt-frm .form-group textarea.form-control{
     border-radius: 16px;
 }
+.cnt-frm .form-group .form-capture-note{
+    margin: 6px 2px 0;
+    color: #8A96A3;
+    font-size: 12px;
+    line-height: 17px;
+}
 .cnt-frm .btn-main{
     border: none;
     font-size: 18px;

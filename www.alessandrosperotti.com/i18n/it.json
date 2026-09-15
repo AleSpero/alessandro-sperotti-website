@@ -120,6 +120,7 @@
   "form_title": "Modulo di Contatto",
   "form_name": "Nome",
   "form_email": "Indirizzo Email",
+  "form_capture_note": "Se inserisci la tua email, potrei salvare quanto scritto finora per ricontattarti una sola volta via email, anche se non invii il modulo.",
   "form_message": "Il Tuo Messaggio",
   "form_submit": "Invia",
   "form_success": "Messaggio inviato! Ti risponder&ograve; al pi&ugrave; presto.",
